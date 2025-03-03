@@ -1,0 +1,11 @@
+---
+title: "week2"
+format: html
+editor: visual
+---
+
+## 2.1 
+xaringanExtra::embed_xaringan(url = "",
+                              ratio = "16:9")
+
+
