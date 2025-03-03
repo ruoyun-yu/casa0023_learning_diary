@@ -6,11 +6,10 @@ website:
   title: "casa0023_learning_diary"
   navbar:
     left:
-      - text: Weekly Notes
-        menu:
-          - href: week4.qmd
-            text: Week 4
-
+      - href: week2.qmd
+        text: "week2"
+      - href: week4.qmd
+        text: "week4"
 format:
   html:
     theme: 
