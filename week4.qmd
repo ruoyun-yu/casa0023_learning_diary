@@ -1,0 +1,41 @@
+---
+title: "week4"
+format: html
+editor: visual
+---
+
+## 4.1 Summary
+
+London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.
+
+![](images/截屏2025-02-08%2020.07.30.png){width="376"}
+
+![](images/截屏2025-02-08%2020.38.14.png){width="385"}
+
+However, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.
+
+Urban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. [《World Cities Report 2022: Envisaging the Future of Cities》](https://unhabitat.org/sites/default/files/2022/06/wcr_2022.pdf)highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.
+
+In recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. [The London Plan 2021](https://www.london.gov.uk/sites/default/files/the_london_plan_2021.pdf), in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:
+
+\-**Policy G1 Green infrastructure**
+
+London’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.
+
+\-**Policy G7 Trees and woodlands**
+
+London’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest
+
+Although [the London City Resilience Strategy 2020](https://www.london.gov.uk/sites/default/files/london_city_resilience_strategy_2020_digital.pdf) does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data.
+
+## 4.2 Application
+
+Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study *《Quantifying urban forest structure with open-access remote sensing data sets》*uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.
+
+![](images/截屏2025-02-08%2023.55.40.png){width="474"}
+
+Moreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《*Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》*employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.
+
+These studies demonstrate that remote sensing technology can provide efficient and accurate data support, enabling governments to develop more informed urban green space plans, optimize green infrastructure layouts, and assess their environmental and economic benefits.
+
+## **4.3 Reflection**

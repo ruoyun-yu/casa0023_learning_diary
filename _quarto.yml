@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "casa0023_learning_diary"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: Weekly Notes
+        menu:
+          - href: week4.qmd
+            text: Week 4
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
