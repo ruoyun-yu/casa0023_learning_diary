@@ -96,6 +96,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./week4.html"> 
 <span class="menu-text">week4</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week6.html"> 
+<span class="menu-text">week6</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./week7.html" aria-current="page"> 
+<span class="menu-text">week7</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -112,9 +120,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">7.1 Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">7.2 Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><strong>7.3 Reflection</strong></a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1</span> 7.1 Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">2</span> 7.2 Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3</span> 7.3 Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -140,35 +148,149 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">7.1 Summary</h2>
-<p>This week we focused on classification 1. Classification process 1) Confirm training data and forecast data 2) Establish a classification model 3) Generate classification results and evaluate accuracy</p>
-<ol start="2" type="1">
-<li>Classification type</li>
+<section id="summary" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 7.1 Summary</h1>
+<p>This week’s lecture focused on classification</p>
+<p><strong>1. Classification process</strong></p>
+<ol type="i">
+<li>Confirm training data and forecast data</li>
+<li>Establish a classification model</li>
+<li>Generate classification results and evaluate accuracy<br>
+</li>
 </ol>
-<ol type="1">
+<p><strong>2. Classification type</strong></p>
+<ol type="i">
 <li>Supervised classification: Manually provide training samples, such as decision trees and support vector machines (SVM).</li>
 <li>Unsupervised classification: there is no manual annotation, only the number of categories is set, and the algorithm automatically clustering data, such as ISODATA method</li>
-<li>Traditional classifiers &amp; Machine learning classifiers: • Traditional classifiers (not model-based) : Maximum Likelihood, Parallelpiped, ISODATA, etc., mainly divide data based on feature space. • Machine learning classifiers (model-based) : decision trees, SVMS, etc., use training data to build more complex classification models.</li>
+<li>Traditional classifiers &amp; Machine learning classifiers:</li>
 </ol>
-<ol start="3" type="1">
-<li>Classification Tree&amp; Regression Tree</li>
-</ol>
-<ol type="1">
+<ul>
+<li>Traditional classifiers (not model-based) : Maximum Likelihood, Parallelpiped, ISODATA, etc., mainly divide data based on feature space.</li>
+<li>Machine learning classifiers (model-based) : decision trees, SVMS, etc., use training data to build more complex classification models.</li>
+</ul>
+<p><strong>3. Classification Tree&amp; Regression Tree</strong></p>
+<ol type="i">
 <li>Classification Tree It is mainly used for the prediction of discrete or classified data with the Impurity impurity impurity selected as the root node.</li>
 <li>Regression Tree It is mainly used for prediction of continuous data and is used when linear regression does not fit the data well. The partition point with the smallest residual sum of squares (SSR) was selected as the split node</li>
-<li>Methods to prevent overfitting • Sets the maximum tree depth • Sets the minimum number of leaf nodes • Weakest Link Pruning • Cross-Validation e.g.&nbsp;k-fold cross-validation • Random Forest Spatial overfitting: If the training set is geographically close to the test set, it may lead to overfitting and affect the model generalization ability. • Sets a minimum distance threshold to ensure that there is space between the training and validation data. • Cluster the training data to ensure that there is sufficient diversity among different datasets • Accuracy does not equal predictive power: Models without spatial autocorrelation are usually more accurate than models with spatial autocorrelation, but this does not mean that they are more predictive.</li>
+<li>Methods to prevent overfitting</li>
+</ol>
+<ul>
+<li><p>Sets the maximum tree depth</p></li>
+<li><p>Sets the minimum number of leaf nodes</p></li>
+<li><p>Weakest Link Pruning</p></li>
+<li><p>Cross-Validation e.g.&nbsp;k-fold cross-validation</p></li>
+<li><p>Random Forest</p>
+<p><em>Spatial overfitting: If the training set is geographically close to the test set, it may lead to overfitting and affect the model generalization ability.</em></p>
+<ul>
+<li><p><em>Sets a minimum distance threshold to ensure that there is space between the training and validation data.</em></p></li>
+<li><p><em>Cluster the training data to ensure that there is sufficient diversity among different datasets</em></p></li>
+<li><p><em>Accuracy does not equal predictive power: Models without spatial autocorrelation are usually more accurate than models with spatial autocorrelation, but this does not mean that they are more predictive.</em></p></li>
+</ul></li>
+</ul>
+<ol start="4" type="i">
 <li>Evaluation Decision trees are highly interpretable, while deep learning is highly accurate but highly black box.</li>
 </ol>
-<ol start="4" type="1">
-<li>Support Vector Machine (SVM) • Essentially similar to regression, finding the optimal Hyperplane divides the data. The C parameter controls the decision boundary width of the hyperplane (allowing certain misclassification). • The Gamma parameter controls the range of influence, with high values considered local and low values considered global. Kernel Trick allows nonlinear data to be mapped so that it is separable in high dimensional space. • Automatically tune C and Gamma parameters via Grid Search.</li>
+<p><strong>4. Support Vector Machine (SVM)</strong></p>
+<ul>
+<li>Essentially similar to regression, finding the optimal Hyperplane divides the data. The C parameter controls the decision boundary width of the hyperplane (allowing certain misclassification).</li>
+<li>The Gamma parameter controls the range of influence, with high values considered local and low values considered global. Kernel Trick allows nonlinear data to be mapped so that it is separable in high dimensional space.</li>
+<li>Automatically tune C and Gamma parameters via Grid Search.</li>
+<li>SVM ensures optimal separation by maximizing the distance from the support vector of the two classes to the hyperplane.</li>
+</ul>
+</section>
+<section id="application" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 7.2 Application</h1>
+<p>Classification can refer to crop type classification or urban land use classification. In practical applications, supervised classification can be implemented using various algorithms. A review of the literature reveals that different data and implementation processes are adopted depending on the objective. Hyperspectral imagery can be utilized, and preprocessing before image classification can improve classification accuracy. If low cost and speed are prioritized, noise-resistant algorithms can be used, with OSM as the training data, eliminating the need for manual selection of training data.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 38%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Article Title</th>
+<th>Land Use Classification of Hyperspectral Data by Spectral Angle Mapper and Support Vector Machine in Humid Tropical Region of India</th>
+<th>Integrating OpenStreetMap Crowdsourced Data and Landsat Time-Series Imagery for Rapid Land Use/Land Cover (LULC) Mapping: Case Study of the Laguna de Bay Area of the Philippines</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Study Area Characteristics</td>
+<td>Cloudy and foggy, diverse crop types</td>
+<td>Cloudy and foggy, rapid land use changes</td>
+</tr>
+<tr class="even">
+<td>Research Content</td>
+<td>Using SAM and SVM with hyperspectral imagery to classify nine types of crop land use in the study area and comparing the classification accuracy of both methods.</td>
+<td>Selecting NB, C4.5, and RF (+SMOTE) as noise-resistant classification algorithms with Landsat multispectral imagery. Automatically extracting training samples from OSM and conducting land use classification with preprocessed data.</td>
+</tr>
+<tr class="odd">
+<td>Remote Sensing Data</td>
+<td>Hyperspectral data from EO-1 Hyperion</td>
+<td>Multi-temporal Landsat 8 + OSM crowdsourced data</td>
+</tr>
+<tr class="even">
+<td>Data Preprocessing</td>
+<td><ol type="1">
+<li><strong>Sensor calibration</strong>: Removing overlapping bands.</li>
+<li><strong>Extracting radiance values</strong>&nbsp;from the imagery.</li>
+<li><strong>Atmospheric correction</strong>: Using the FLAASH module to eliminate low reflectance bands.</li>
+<li><strong>Geometric correction</strong>: Using IRS-P6 LISS III imagery as a reference.</li>
+<li><strong>Dimensionality reduction</strong>: Applying Principal Component Analysis (PCA) to optimize computational complexity.</li>
+</ol></td>
+<td>Landsat data is directly used without preprocessing.</td>
+</tr>
+<tr class="odd">
+<td>Image Classification</td>
+<td><ol type="1">
+<li><strong>Geometric-distance-based classification</strong>: Spectral Angle Mapper (SAM).</li>
+<li><strong>Supervised classification</strong>: Support Vector Machine (SVM).</li>
+</ol></td>
+<td><ol type="1">
+<li><p><strong>Converting categorical data</strong>: OSM-LU and OSM-N categories are converted into four, five, and six land cover classes.</p></li>
+<li><p><strong>Extracting training pixels</strong>: OSM polygons are randomly split 50/50 to create independent training and validation datasets. Random points are generated within each training polygon to serve as training pixels for classification.</p></li>
+<li><p><strong>Supervised image classification</strong>:</p>
+<p>NB, C4.5, RF (+SMOTE).</p></li>
+</ol></td>
+</tr>
+<tr class="even">
+<td>Accuracy Evaluation</td>
+<td>Based on ground truth data, calculating&nbsp;overall accuracy (OA)&nbsp;and&nbsp;Kappa coefficient.</td>
+<td>Using high-resolution Google Earth imagery to determine the actual land use/land cover class for each point. Calculating&nbsp;overall accuracy (OA), producer’s accuracy (PA), and user’s accuracy (UA).</td>
+</tr>
+<tr class="odd">
+<td>Research Findings</td>
+<td>SVM outperforms SAM.</td>
+<td><p>RF (+SMOTE) performs best in the four-class classification.</p>
+<ul>
+<li><p>RF is more effective in classifying “impervious surfaces” and “farmland.”</p></li>
+<li><p>NB performs better in classifying “orchards” and “forests.”</p></li>
+<li><p>The SMOTE technique significantly improves classification accuracy, especially in decision-tree-based algorithms.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p><strong>SAM vs SVM</strong></p>
+<p>SAM classifies by calculating the Angle between the spectral vector of each pixel in the image and the spectral vector of a spectral library (or training sample) of a known class. The smaller the spectral Angle, the more similar the pixel is to the class. SVM separates different categories of data by finding an optimal hyperplane in the feature space. The classification effect of SVM is better than that of SAM mainly in the following aspects: Adaptability: SVM can handle complex, non-linear data, map the data to high-dimensional Spaces through kernel functions, and handle more complex boundaries. SAM is suitable for data with obvious spectral characteristics and linear separability, and the effect is simple and the noise is small. Noise robustness: SVM deals with noise through regularization and kernel functions, which can reduce errors. SAM is sensitive to noise, especially when the data quality is poor. Classification accuracy: SVM can find more complex decision boundaries and is generally more accurate in remote sensing classification. SAM is only suitable for data with large spectral differences.</p></li>
+<li><p><strong>How does the synthetic Minority oversampling technique work when dealing with training data imbalances?</strong></p>
+<p>SMOTE balances the training data set by inserting synthetic samples between a few class samples. The specific steps are as follows:</p></li>
+</ol>
+<!-- -->
+<ol type="I">
+<li>Calculate the distance between samples: For each minority sample, calculate the Euclidean distance between it and other minority samples.</li>
+<li>Selection of interpolation points: The interpolation points are selected according to the distance, usually the nearest neighbor sample whose distance is less than a certain threshold.</li>
+<li>Generation of new samples: at the selected interpolation points, a new minority class sample is generated by linear interpolation or other methods.</li>
+</ol>
+<!-- -->
+<ol start="3" type="1">
+<li><p><strong>Sources of data noise</strong></p>
+<p>Landsat data is affected by clouds and has attribute noise The error of OSM data when combining categories and the inaccurate boundary of original OSM data when delimited in the field lead to class noise</p></li>
 </ol>
 </section>
-<section id="application" class="level2">
-<h2 class="anchored" data-anchor-id="application">7.2 Application</h2>
-</section>
-<section id="reflection" class="level2">
-<h2 class="anchored" data-anchor-id="reflection"><strong>7.3 Reflection</strong></h2>
+<section id="reflection" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 7.3 Reflection</h1>
 
 
 </section>

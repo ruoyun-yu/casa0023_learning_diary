@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>week4 – casa0023_learning_diary</title>
+<title>week6 – casa0023_learning_diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,11 +93,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">week2</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./week4.html" aria-current="page"> 
+    <a class="nav-link" href="./week4.html"> 
 <span class="menu-text">week4</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./week6.html"> 
+    <a class="nav-link active" href="./week6.html" aria-current="page"> 
 <span class="menu-text">week6</span></a>
   </li>  
   <li class="nav-item">
@@ -120,9 +120,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">4.1 Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">4.2 Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><strong>4.3 Reflection</strong></a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">6.1 Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">6.2 Application</a></li>
   </ul>
 </nav>
     </div>
@@ -131,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">week4</h1>
+<h1 class="title">week6</h1>
 </div>
 
 
@@ -148,29 +147,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">4.1 Summary</h2>
-<p>London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.</p>
-<p><img src="images/截屏2025-02-08 20.07.30.png" class="img-fluid" width="376"></p>
-<p><img src="images/截屏2025-02-08 20.38.14.png" class="img-fluid" width="385"></p>
-<p>However, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.</p>
-<p>Urban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. <a href="https://unhabitat.org/sites/default/files/2022/06/wcr_2022.pdf">《World Cities Report 2022: Envisaging the Future of Cities》</a>highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.</p>
-<p>In recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. <a href="https://www.london.gov.uk/sites/default/files/the_london_plan_2021.pdf">The London Plan 2021</a>, in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:</p>
-<p>-<strong>Policy G1 Green infrastructure</strong></p>
-<p>London’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.</p>
-<p>-<strong>Policy G7 Trees and woodlands</strong></p>
-<p>London’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest</p>
-<p>Although <a href="https://www.london.gov.uk/sites/default/files/london_city_resilience_strategy_2020_digital.pdf">the London City Resilience Strategy 2020</a> does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data.</p>
+<section id="summary" class="level1">
+<h1>6.1 Summary</h1>
+<p>This week’s lecture focused on Google earth engine</p>
+<ol type="1">
+<li><strong>Important terms of GEE</strong></li>
+</ol>
+<ul>
+<li><p>Image = Raster</p></li>
+<li><p>Feature = Vector</p></li>
+<li><p>Image Collection = a set of time series raster data</p></li>
+<li><p>Feature Collection= Multiple vector objects</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p><strong>GEEoperation mode</strong></p>
+<p>It adopts the Client-Server architecture Parallelism is supported, with the for loop executing locally and the map() function processing in parallel Dynamic resolution adjustment, adjusting the resolution according to the zoom level</p></li>
+<li><p><strong>Precautions for data loading</strong></p></li>
+</ol>
+<!-- -->
+<ol type="i">
+<li><p>The scale parameter determines the resolution of data export When the scale is lower than the original resolution of the image, the true resolution of the image is not increased, but the value of the original pixel. When the scale is higher than the original resolution (such as scale=50), multiple pixels are aggregated and the calculated value may change.</p></li>
+<li><p>GEE image loading and visualization need to specify the band and visualization parameters</p></li>
+<li><p>GEE will automatically convert the projection when processing remote sensing images, and most data will use EPSG:3857 (Web Mercator) by default.</p></li>
+<li><p>GEE main function</p></li>
+</ol>
+<ul>
+<li><p>ee.Image: single raster image</p></li>
+<li><p>ee.ImageCollection: Multiple raster images, such as data sets</p></li>
+<li><p>ee.Geometry: points, polygons and other basic geometric shapes</p></li>
+<li><p>ee.Feature: Geometric objects with attribute information, such as a country border data</p></li>
+<li><p>ee.FeatureCollection: A collection of features</p></li>
+<li><p>ee.Reducer: Aggregate data</p></li>
+<li><p>ee.Join: Data merge, such as spatial join.</p></li>
+<li><p>ee.Array: multidimensional data structure (similar to NumPy)</p></li>
+<li><p>ee.Chart: An object that visualizes the analysis results</p></li>
+</ul>
+<ol start="4" type="1">
+<li><strong>typical processes in GEE</strong></li>
+</ol>
+<!-- -->
+<ol type="i">
+<li><p>Joins</p></li>
+<li><p>Zonal Statistics</p></li>
+<li><p>Filtering of images or specific values</p></li>
+<li><p>Image</p></li>
+<li><p>Reduction</p></li>
+</ol>
+<ul>
+<li><p>Reduce by Pixel</p></li>
+<li><p>Reduce by Region Calculate statistics for a specific region</p></li>
+<li><p>Reduce by Neighborhood</p>
+<p><em>The pixel and the pixel around it are calculated to generate a new value</em></p>
+<ul>
+<li><p><em>set a window of pixels surrounding a central pixel (3*3, 5*5)</em></p></li>
+<li><p><em>calculate like a filter or texture measure</em></p></li>
+<li><p><em>purpose: Edge Detection, Smoothing, Denoising and so on</em></p></li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/截屏2025-03-09 13.49.11.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="269"></p>
+</figure>
+</div>
 </section>
-<section id="application" class="level2">
-<h2 class="anchored" data-anchor-id="application">4.2 Application</h2>
-<p>Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study&nbsp;<em>《Quantifying urban forest structure with open-access remote sensing data sets》</em>uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.</p>
-<p><img src="images/截屏2025-02-08 23.55.40.png" class="img-fluid" width="474"></p>
-<p>Moreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《<em>Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》</em>employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.</p>
-<p>These studies demonstrate that remote sensing technology can provide efficient and accurate data support, enabling governments to develop more informed urban green space plans, optimize green infrastructure layouts, and assess their environmental and economic benefits.</p>
-</section>
-<section id="reflection" class="level2">
-<h2 class="anchored" data-anchor-id="reflection"><strong>4.3 Reflection</strong></h2>
+<section id="application" class="level1">
+<h1>6.2 Application</h1>
 
 
 </section>
