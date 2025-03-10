@@ -12,6 +12,10 @@ website:
         text: "week2"
       - href: week4.qmd
         text: "week4"
+      - href: week6.qmd
+        text: "week6"
+      - href: week7.qmd
+        text: "week7"
 format:
   html:
     theme: 

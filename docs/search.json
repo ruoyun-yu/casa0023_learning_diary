@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "week4",
+    "section": "",
+    "text": "London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.\n\n\nHowever, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.\nUrban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. 《World Cities Report 2022: Envisaging the Future of Cities》highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.\nIn recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. The London Plan 2021, in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:\n-Policy G1 Green infrastructure\nLondon’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.\n-Policy G7 Trees and woodlands\nLondon’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest\nAlthough the London City Resilience Strategy 2020 does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data."
+  },
+  {
+    "objectID": "week4.html#summary",
+    "href": "week4.html#summary",
+    "title": "week4",
+    "section": "",
+    "text": "London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.\n\n\nHowever, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.\nUrban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. 《World Cities Report 2022: Envisaging the Future of Cities》highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.\nIn recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. The London Plan 2021, in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:\n-Policy G1 Green infrastructure\nLondon’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.\n-Policy G7 Trees and woodlands\nLondon’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest\nAlthough the London City Resilience Strategy 2020 does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data."
+  },
+  {
+    "objectID": "week4.html#application",
+    "href": "week4.html#application",
+    "title": "week4",
+    "section": "4.2 Application",
+    "text": "4.2 Application\nRemote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study 《Quantifying urban forest structure with open-access remote sensing data sets》uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.\n\nMoreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.\nThese studies demonstrate that remote sensing technology can provide efficient and accurate data support, enabling governments to develop more informed urban green space plans, optimize green infrastructure layouts, and assess their environmental and economic benefits."
+  },
+  {
+    "objectID": "week4.html#reflection",
+    "href": "week4.html#reflection",
+    "title": "week4",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "casa0023_learning_diary",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "week2.html",
+    "href": "week2.html",
+    "title": "week2",
+    "section": "",
+    "text": "xaringanExtra::embed_xaringan(url = “https://raw.githubusercontent.com/ruoyun-yu/casa0023_learning_diary/main/week2_iceye.html”, ratio = “16:9”)"
+  },
+  {
+    "objectID": "week2.html#section",
+    "href": "week2.html#section",
+    "title": "week2",
+    "section": "",
+    "text": "xaringanExtra::embed_xaringan(url = “https://raw.githubusercontent.com/ruoyun-yu/casa0023_learning_diary/main/week2_iceye.html”, ratio = “16:9”)"
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "week7",
+    "section": "",
+    "text": "This week we focused on classification 1. Classification process 1) Confirm training data and forecast data 2) Establish a classification model 3) Generate classification results and evaluate accuracy\n\nClassification type\n\n\nSupervised classification: Manually provide training samples, such as decision trees and support vector machines (SVM).\nUnsupervised classification: there is no manual annotation, only the number of categories is set, and the algorithm automatically clustering data, such as ISODATA method\nTraditional classifiers & Machine learning classifiers: • Traditional classifiers (not model-based) : Maximum Likelihood, Parallelpiped, ISODATA, etc., mainly divide data based on feature space. • Machine learning classifiers (model-based) : decision trees, SVMS, etc., use training data to build more complex classification models.\n\n\nClassification Tree& Regression Tree\n\n\nClassification Tree It is mainly used for the prediction of discrete or classified data with the Impurity impurity impurity selected as the root node.\nRegression Tree It is mainly used for prediction of continuous data and is used when linear regression does not fit the data well. The partition point with the smallest residual sum of squares (SSR) was selected as the split node\nMethods to prevent overfitting • Sets the maximum tree depth • Sets the minimum number of leaf nodes • Weakest Link Pruning • Cross-Validation e.g. k-fold cross-validation • Random Forest Spatial overfitting: If the training set is geographically close to the test set, it may lead to overfitting and affect the model generalization ability. • Sets a minimum distance threshold to ensure that there is space between the training and validation data. • Cluster the training data to ensure that there is sufficient diversity among different datasets • Accuracy does not equal predictive power: Models without spatial autocorrelation are usually more accurate than models with spatial autocorrelation, but this does not mean that they are more predictive.\nEvaluation Decision trees are highly interpretable, while deep learning is highly accurate but highly black box.\n\n\nSupport Vector Machine (SVM) • Essentially similar to regression, finding the optimal Hyperplane divides the data. The C parameter controls the decision boundary width of the hyperplane (allowing certain misclassification). • The Gamma parameter controls the range of influence, with high values considered local and low values considered global. Kernel Trick allows nonlinear data to be mapped so that it is separable in high dimensional space. • Automatically tune C and Gamma parameters via Grid Search."
+  },
+  {
+    "objectID": "week7.html#summary",
+    "href": "week7.html#summary",
+    "title": "week7",
+    "section": "",
+    "text": "This week we focused on classification 1. Classification process 1) Confirm training data and forecast data 2) Establish a classification model 3) Generate classification results and evaluate accuracy\n\nClassification type\n\n\nSupervised classification: Manually provide training samples, such as decision trees and support vector machines (SVM).\nUnsupervised classification: there is no manual annotation, only the number of categories is set, and the algorithm automatically clustering data, such as ISODATA method\nTraditional classifiers & Machine learning classifiers: • Traditional classifiers (not model-based) : Maximum Likelihood, Parallelpiped, ISODATA, etc., mainly divide data based on feature space. • Machine learning classifiers (model-based) : decision trees, SVMS, etc., use training data to build more complex classification models.\n\n\nClassification Tree& Regression Tree\n\n\nClassification Tree It is mainly used for the prediction of discrete or classified data with the Impurity impurity impurity selected as the root node.\nRegression Tree It is mainly used for prediction of continuous data and is used when linear regression does not fit the data well. The partition point with the smallest residual sum of squares (SSR) was selected as the split node\nMethods to prevent overfitting • Sets the maximum tree depth • Sets the minimum number of leaf nodes • Weakest Link Pruning • Cross-Validation e.g. k-fold cross-validation • Random Forest Spatial overfitting: If the training set is geographically close to the test set, it may lead to overfitting and affect the model generalization ability. • Sets a minimum distance threshold to ensure that there is space between the training and validation data. • Cluster the training data to ensure that there is sufficient diversity among different datasets • Accuracy does not equal predictive power: Models without spatial autocorrelation are usually more accurate than models with spatial autocorrelation, but this does not mean that they are more predictive.\nEvaluation Decision trees are highly interpretable, while deep learning is highly accurate but highly black box.\n\n\nSupport Vector Machine (SVM) • Essentially similar to regression, finding the optimal Hyperplane divides the data. The C parameter controls the decision boundary width of the hyperplane (allowing certain misclassification). • The Gamma parameter controls the range of influence, with high values considered local and low values considered global. Kernel Trick allows nonlinear data to be mapped so that it is separable in high dimensional space. • Automatically tune C and Gamma parameters via Grid Search."
+  },
+  {
+    "objectID": "week7.html#application",
+    "href": "week7.html#application",
+    "title": "week7",
+    "section": "7.2 Application",
+    "text": "7.2 Application"
+  },
+  {
+    "objectID": "week7.html#reflection",
+    "href": "week7.html#reflection",
+    "title": "week7",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection"
+  }
+]

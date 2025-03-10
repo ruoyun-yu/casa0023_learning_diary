@@ -1,0 +1,85 @@
+---
+title: "week6"
+format: html
+editor: visual
+---
+
+# 6.1 Summary
+
+This week's lecture focused on Google earth engine
+
+1.  **Important terms of GEE**
+
+-   Image = Raster
+
+-   Feature = Vector
+
+-   Image Collection = a set of time series raster data
+
+-   Feature Collection= Multiple vector objects
+
+2.  **GEEoperation mode**
+
+    It adopts the Client-Server architecture Parallelism is supported, with the for loop executing locally and the map() function processing in parallel Dynamic resolution adjustment, adjusting the resolution according to the zoom level
+
+3.  **Precautions for data loading**
+
+<!-- -->
+
+i)  The scale parameter determines the resolution of data export When the scale is lower than the original resolution of the image, the true resolution of the image is not increased, but the value of the original pixel. When the scale is higher than the original resolution (such as scale=50), multiple pixels are aggregated and the calculated value may change.
+
+ii) GEE image loading and visualization need to specify the band and visualization parameters
+
+iii) GEE will automatically convert the projection when processing remote sensing images, and most data will use EPSG:3857 (Web Mercator) by default.
+
+iv) GEE main function
+
+-   ee.Image: single raster image
+
+-   ee.ImageCollection: Multiple raster images, such as data sets
+
+-   ee.Geometry: points, polygons and other basic geometric shapes
+
+-   ee.Feature: Geometric objects with attribute information, such as a country border data
+
+-   ee.FeatureCollection: A collection of features
+
+-   ee.Reducer: Aggregate data
+
+-   ee.Join: Data merge, such as spatial join.
+
+-   ee.Array: multidimensional data structure (similar to NumPy)
+
+-   ee.Chart: An object that visualizes the analysis results
+
+4.  **typical processes in GEE**
+
+<!-- -->
+
+i)  Joins
+
+ii) Zonal Statistics
+
+iii) Filtering of images or specific values
+
+iv) Image
+
+v)  Reduction
+
+-   Reduce by Pixel
+
+-   Reduce by Region Calculate statistics for a specific region
+
+-   Reduce by Neighborhood
+
+    *The pixel and the pixel around it are calculated to generate a new value*
+
+    -   *set a window of pixels surrounding a central pixel (3\*3, 5\*5)*
+
+    -   *calculate like a filter or texture measure*
+
+    -   *purpose: Edge Detection, Smoothing, Denoising and so on*
+
+![](images/截屏2025-03-09%2013.49.11.png){fig-align="center" width="269"}
+
+# 6.2 Application

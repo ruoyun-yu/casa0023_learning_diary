@@ -5,6 +5,6 @@ editor: visual
 ---
 
 ## 2.1 
-xaringanExtra::embed_xaringan(url = "https://raw.githubusercontent.com/ruoyun-yu/casa0023_learning_diary/refs/heads/main/week2_iceye.Rmd",
-                              ratio = "16:9")
 
+```{r}
+xaringanExtra::embed_xaringan(url = "https://raw.githubusercontent.com/ruoyun-yu/casa0023_learning_diary/main/week2_iceye.html", ratio = "16:9")
