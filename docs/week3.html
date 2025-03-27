@@ -97,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">week2</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./week3.html"> 
+    <a class="nav-link active" href="./week3.html" aria-current="page"> 
 <span class="menu-text">week3</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./week4.html" aria-current="page"> 
+    <a class="nav-link" href="./week4.html"> 
 <span class="menu-text">week4</span></a>
   </li>  
   <li class="nav-item">
@@ -136,10 +136,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">4.1 Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">4.2 Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">4.3 Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">6.4 References</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">3.1 Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">3.2 Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">3.3 Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">3.4 References</a></li>
   </ul>
 </nav>
     </div>
@@ -166,35 +166,76 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="summary" class="level1">
-<h1>4.1 Summary</h1>
-<p>London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.</p>
-<p><img src="images/截屏2025-02-08 20.07.30.png" class="img-fluid" width="376"></p>
-<p><img src="images/截屏2025-02-08 20.38.14.png" class="img-fluid" width="385"></p>
-<p>However, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.</p>
-<p>Urban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. <a href="https://unhabitat.org/sites/default/files/2022/06/wcr_2022.pdf">《World Cities Report 2022: Envisaging the Future of Cities》</a>highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.</p>
-<p>In recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. <a href="https://www.london.gov.uk/sites/default/files/the_london_plan_2021.pdf">The London Plan 2021</a>, in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:</p>
-<p>-<strong>Policy G1 Green infrastructure</strong></p>
-<p>London’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.</p>
-<p>-<strong>Policy G7 Trees and woodlands</strong></p>
-<p>London’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest</p>
-<p>Although <a href="https://www.london.gov.uk/sites/default/files/london_city_resilience_strategy_2020_digital.pdf">the London City Resilience Strategy 2020</a> does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data.</p>
+<h1>3.1 Summary</h1>
+<p><strong>1. Digital Multispectral Camera (MSS)</strong>&nbsp;</p>
+<p>i．The Standard for Remote Sensing&nbsp;</p>
+<p>i) MSS has become the standard for remote sensing.&nbsp;</p>
+<p>ii) MSS performs better than RBV.&nbsp;</p>
+<p>MSS uses a whisk broom scanning method, which ensures uniform data acquisition, making it easier to mosaic and analyze. A single scan covers a large surface area and includes near-infrared bands.&nbsp;</p>
+<p>RBV, on the other hand, functions like an instantaneous photographic camera, capturing a smaller area per shot. It is more susceptible to cloud cover, changes in viewing angles, and unstable data acquisition, primarily operating in the visible spectrum.&nbsp;</p>
+<p>ii．Whisk Broom vs.&nbsp;Push Broom&nbsp;</p>
+<p>- Whisk Broom: Uses a mechanically oscillating mirror to scan the ground laterally, acquiring one pixel at a time. It requires line-by-line scanning and relies on a single detector. Scan Line Correction is crucial.&nbsp;</p>
+<p>- Push Broom: Utilizes a linear CCD detector array, eliminating the need for a mechanical scanning mirror. It captures an entire scan line at once with multiple detectors.&nbsp;</p>
+<p>&nbsp;<strong>2. Geometric Correction</strong>&nbsp;</p>
+<p>i．Causes of Image Distortions&nbsp;</p>
+<p>i) View angle (off-nadir)&nbsp;</p>
+<p>ii) Topography&nbsp;</p>
+<p>iii) Wind (for aerial imagery)&nbsp;</p>
+<p>iiii) Earth’s rotation&nbsp;</p>
+<p>ii．How to Correct Geometric Distortions&nbsp;</p>
+<p>i) Identify Ground Control Points (GCPs) using GPS.&nbsp;</p>
+<p>ii) Apply linear regression to compute geometric transformation coefficients.&nbsp;</p>
+<p>iii) Minimize the Root Mean Square Error (RMSE).&nbsp;</p>
+<p>iv) Compare different transformation algorithms.&nbsp;</p>
+<p>iii．Method 1: Forward Mapping&nbsp;</p>
+<p>- input to output (forward mapping), for the new x</p>
+<p>- X=the rectified x and y which could fall anywhere on the gold standard map——Interpolation</p>
+<p>Iv．Method 2: Backward Mapping&nbsp;</p>
+<p>- output to input (backward mapping), for the new x:</p>
+<p>- Xi（Original image ）=Can correct the distortion of the original image</p>
+<p>V．Resampling Methods&nbsp;</p>
+<p>i) Nearest Neighbor&nbsp;</p>
+<p>ii) Bilinear Interpolation&nbsp;</p>
+<p>iii) Cubic Convolution&nbsp;</p>
+<p>iv) Cubic Spline&nbsp;</p>
+<p><strong>3. Atmospheric Correction</strong>&nbsp;</p>
+<p>i．Causes of Atmospheric Distortion&nbsp;</p>
+<p>i) Atmospheric Scattering&nbsp;</p>
+<p>&nbsp;&nbsp; - Path Radiance&nbsp;</p>
+<p>&nbsp;&nbsp; - Atmospheric Attenuation&nbsp;</p>
+<p>ii) Topographic Attenuation&nbsp;</p>
+<p>ii. Relative Correction Methods&nbsp;</p>
+<p>- Dark Object Subtraction (DOS) – Used for visible and short-wave infrared correction.&nbsp;</p>
+<p>- FLAASH Analytical Correction – Suitable for multispectral imagery.&nbsp;</p>
+<p>- Pseudo-Invariant Features (PIFs) – Used for multi-temporal image correction.&nbsp;</p>
+<p>iii. &nbsp;Absolute Correction Methods&nbsp;</p>
+<p>- Converts digital brightness values into scaled surface reflectance.&nbsp;</p>
+<p>i) Atmospheric Radiative Transfer Models&nbsp;</p>
+<p>&nbsp;&nbsp; - Requires data such as:&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; - Atmospheric Model&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; - Local Atmospheric Visibility&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; - Image Altitude&nbsp;</p>
+<p>ii) Empirical Line Correction (ELC)&nbsp;</p>
+<p>iii) Factors Affecting Atmospheric Correction&nbsp;</p>
+<p><strong>4. Orthorectification Correction (A Subset of Georectification)</strong>&nbsp;</p>
+<p>Ensures that pixels are viewed at nadir (directly below the sensor).&nbsp;</p>
+<p>i. &nbsp;Requirements&nbsp;</p>
+<p>- Sensor Geometry&nbsp;</p>
+<p>- An Elevation Model&nbsp;</p>
+<p>ii. &nbsp;Correction Methods&nbsp;</p>
+<p>i) Cosine Correction (Primary method)&nbsp;</p>
+<p>ii) Minnaert Correction&nbsp;</p>
+<p>iii) Statistical Empirical Correction&nbsp;</p>
+<p>iv) C Correction&nbsp;</p>
 </section>
 <section id="application" class="level1">
-<h1>4.2 Application</h1>
-<p>.Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study&nbsp;<em>《Quantifying urban forest structure with open-access remote sensing data sets》</em>uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.</p>
-<p><img src="images/截屏2025-02-08 23.55.40.png" class="img-fluid" width="474"></p>
-<p>Moreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《<em>Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》</em>employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.</p>
-<p>These studies demonstrate that remote sensing technology can provide efficient and accurate data support, enabling governments to develop more informed urban green space plans, optimize green infrastructure layouts, and assess their environmental and economic benefits</p>
+<h1>3.2 Application</h1>
 </section>
 <section id="reflection" class="level1">
-<h1>4.3 Reflection</h1>
-<p>Remote sensing imagery can be used for monitoring urban forest structures and identifying potential planting areas, providing support for the protection and development of urban green infrastructure. Due to its spatial characteristics, remote sensing imagery offers a new perspective for urban management.</p>
-<p>Through this week’s learning, I believe that remote sensing imagery can also be utilized to evaluate urban green infrastructure development. Currently, many regions in China are implementing programs such as the Conversion of Farmland to Forest Program and the Permanent Basic Farmland Protection Program. The central and local governments set quantitative targets for cities regarding green infrastructure development and conservation. However, some cities, due to economic development needs, are unable to meet these requirements on their own. To fulfill the mandated targets, they collaborate with other cities through a mechanism known as “horizontal ecological compensation.”For example, if a provincial government requires City A to expand its forest area by 10 square kilometers within a year, but City A only has 5 square kilometers of available land for afforestation, it can compensate by expanding 5 square kilometers of forest in City B. In return, City A provides City B with financial compensation or other benefits to meet the provincial government’s requirements. I believe that remote sensing imagery can first be used to monitor whether local governments have met the green infrastructure targets set by higher authorities. Additionally, it can be employed to evaluate whether this “horizontal ecological compensation” mechanism effectively achieves ecological restoration.</p>
+<h1>3.3 Reflection</h1>
 </section>
 <section id="references" class="level1">
-<h1>6.4 References</h1>
-<p>Baines, O. et al.&nbsp;(2020) Quantifying urban forest structure with open-access remote sensing data sets.&nbsp;<em>Urban forestry &amp; urban greening</em>. [Online] 50126653-.</p>
-<p>Merry, K. et al.&nbsp;(2013) Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States. Computers, environment and urban systems. [Online] 3939–47.</p>
+<h1>3.4 References</h1>
 
 
 </section>

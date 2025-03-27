@@ -1,0 +1,91 @@
+---
+title: "week7"
+format: html
+editor: visual
+---
+
+# 8.1 Summary
+
+This week’s lecture introduced a new land cover classification dataset called Dynamic World based on a Semi-supervised approach, Object-Based Image Analysis, Sub-pixel analysis – two new classification methods – and methods for classification accuracy assessment.
+
+**1.  A New Real-time Land Cover Classification Dataset – Dynamic World**
+
+i.  Data Classification Method
+
+-   The dataset adopts a semi-supervised classification approach, which combines both supervised and unsupervised learning.
+
+-   The globe is divided into 14 biomes, and sampling is conducted according to geographic regions and biomes.
+
+-   Annotators classify Surface Reflectance and assign different weights based on professional expertise.
+
+-   Top of Atmosphere Reflectance is used for training.
+
+ii. Advantages
+
+   It features continuously evolving predictions based on real-time data input and is constantly improved through deep learning methods, thereby enhancing the accuracy and relevance of the predictions.
+
+iii. Disadvantages
+
+-   The data is not clear at local scales and is only suitable for large-scale studies (national, global scale).
+
+-   Excessive preprocessing and filtering lead to data smoothing; the combination of the 50×50m minimum mapping unit and the moving window of the CNN may cause blurring at local scales due to information integration and spatial compression.
+
+**2. Object-Based Image Analysis (OBIA)**
+
+i.  Definition
+
+   It aggregates similar pixels into superpixels, and then these objects are used for classification or analysis.
+
+ii. Method – Simple Linear Iterative Clustering
+
+-   It calculates spatial distance + color similarity, iteratively optimizing the segmentation results and adjusting the superpixel centers.
+
+-   Parameters affecting the shape and distribution of superpixels: The S value (the distance between initial points) determines the size of the superpixels, and the m value (compactness) controls the balance between spatial distance and color similarity.
+
+**3.  Sub-pixel Analysis**
+
+i.  Definition
+
+   It assumes that a single pixel is composed of multiple types of land cover.
+
+ii. Methods
+
+-   Select Spectrally Pure Endmembers (e.g., water, vegetation, soil).
+
+-   Use Linear Spectral Unmixing (LSU) to calculate the proportion of each endmember.
+
+iii. Shortage
+
+   There are errors because it is very difficult to find completely pure endmembers.
+
+**4. Accuracy Assessment**
+
+i.  Confusion Matrix
+
+   Producer’s Accuracy = TP / (TP + FN)
+
+   User’s Accuracy =TP/ (TP + FP)
+
+   Overall Accuracy = (TP +TN)/(TP+FP+FN+TN)
+
+We should choose the appropriate data and methods based on the research objectives and scale. Pixel-based classification is suitable for large-scale, low-resolution data. Object-based classification is suitable for high-resolution data. Sub-pixel analysis is suitable for mixed land cover areas, such as urban regions.
+
+# 8.2 Application
+
+Different classification methods result in variations in classification accuracy and the spatial patterns of classification results. Depending on the research objective, different classification methods can be combined with various spatial analysis techniques. The sub-pixel model assumes that a single pixel contains multiple land cover types, which can compensate for the limitations of image resolution and provide high-accuracy estimates based on low-resolution data. For example, Narumasa Tsutsumida monitored impervious surface areas (ISA) in Jakarta using MODIS data.Object-based classification produces contiguous and block-like classification results, which can be converted into points to calculate density for spatial statistical analysis. For example, the study by Ngoc Tuyen Nguyen et al. combined object-based classification with kernel density estimation (KDE) to analyze the spatial distribution of impervious surfaces in Ho Chi Minh City, identifying hotspot regions and temporal changes.
+
+Narumasa Tsutsumida’s research focused on developing a classification model to overcome the challenges of mixed pixels and low resolution. The study consisted of four main stages: data preprocessing, reference data collection, model development, and model comparison. First, the data underwent preprocessing, where cloud-covered areas were masked out, and missing values were interpolated using the double logistic function in TIMESAT to smooth the EVI time series. A total of 1,000 regions were selected, and the ISA proportion within each region was estimated based on high-resolution imagery. The reference data was then divided into training and validation sets. A random forest regression model was used, with EVI values as input variables and ISA proportions as output variables. Finally, a pixel classification model was constructed based on different thresholds (25%, 50%, and 75%), and the accuracy differences were compared using overall accuracy and %RMSE as evaluation metrics.
+
+Ngoc Tuyen Nguyen’s study on impervious surfaces in Ho Chi Minh City was divided into two main parts: land use classification and spatial statistical analysis. The land use classification process included three steps: spectral index calculation, segmentation, and classification. First, the modified normalized difference water index (MNDWI), enhanced normalized difference impervious surface index (ENDISI), and normalized difference vegetation index (NDVI) were calculated based on preprocessed imagery. The images were then segmented into small single-pixel objects, which were merged based on similarity or local homogeneity. The segmentation process was controlled by compactness, scale parameter, and shape parameters. Using the class hierarchy method, land cover was classified into impervious areas, bare land, and other based on historical spectral index thresholds, location, shape, texture, and other statistical information.After classification, impervious surface pixels were converted into point data, and the KDE method was applied to calculate impervious surface density. Spatial statistical analyses were then performed based on the density data, including spatial autocorrelation analysis, optimized hotspot analysis, and emerging hotspot analysis. Spatial autocorrelation analysis was used to detect the spatial dependence of observations, optimized hotspot analysis identified clusters of ISA hotspots and cold spots, and emerging hotspot analysis tracked temporal changes in ISA hotspots.
+
+# 8.3 Reflection
+
+In my undergraduate thesis, I studied the spatial distribution characteristics of land expansion in Shenzhen. At that time, I used a relatively crude method, which divided the city into eight sectors based on the urban geometric center and calculated the differences in newly added land among these sectors. This method had limitations in accuracy, as it could not precisely identify the specific locations of newly added land. Instead, it only reflected the overall scale of land expansion and failed to capture changes in the number of new development projects. For example, some areas might have a large number of small-scale development projects, while others might have only a few large-scale projects, and this method could not reveal such differences.
+
+During this week's study, I learned about object-based classification methods and came across research that combines object-based classification with spatial statistical analysis. This approach converts classified objects into point data for further statistical analysis. I believe this method can better optimize my previous research and allow for a more in-depth exploration of boundary differences in land development.
+
+# 8.4 References
+
+Nguyen, N. T. et al. (2024) Identifying impervious surface hot spots in Ho Chi Minh City using object-based classification and spatial statistics. IOP conference series. Earth and environmental science. \[Online\] 1349 (1), 12030-.
+
+Tsutsumida, N. et al. (2016) Sub-Pixel Classification of MODIS EVI for Annual Mappings of Impervious Surface Areas. Remote sensing (Basel, Switzerland). \[Online\] 8 (2), 143-.

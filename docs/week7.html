@@ -89,8 +89,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./week1.html"> 
+<span class="menu-text">week1</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./week2.html"> 
 <span class="menu-text">week2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week3.html"> 
+<span class="menu-text">week3</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./week4.html"> 
@@ -103,6 +111,14 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./week7.html" aria-current="page"> 
 <span class="menu-text">week7</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week8.html"> 
+<span class="menu-text">week</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week9.html"> 
+<span class="menu-text">week9</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -120,9 +136,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1</span> 7.1 Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">2</span> 7.2 Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3</span> 7.3 Reflection</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">7.1 Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">7.2 Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">7.3 Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">7.4 References</a></li>
   </ul>
 </nav>
     </div>
@@ -148,8 +165,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> 7.1 Summary</h1>
+<section id="summary" class="level1">
+<h1>7.1 Summary</h1>
 <p>This week’s lecture focused on classification</p>
 <p><strong>1. Classification process</strong></p>
 <ol type="i">
@@ -198,8 +215,8 @@ ul.task-list li input[type="checkbox"] {
 <li>SVM ensures optimal separation by maximizing the distance from the support vector of the two classes to the hyperplane.</li>
 </ul>
 </section>
-<section id="application" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> 7.2 Application</h1>
+<section id="application" class="level1">
+<h1>7.2 Application</h1>
 <p>Classification can refer to crop type classification or urban land use classification. In practical applications, supervised classification can be implemented using various algorithms. A review of the literature reveals that different data and implementation processes are adopted depending on the objective. Hyperspectral imagery can be utilized, and preprocessing before image classification can improve classification accuracy. If low cost and speed are prioritized, noise-resistant algorithms can be used, with OSM as the training data, eliminating the need for manual selection of training data.</p>
 <table class="caption-top table">
 <colgroup>
@@ -289,8 +306,15 @@ ul.task-list li input[type="checkbox"] {
 <p>Landsat data is affected by clouds and has attribute noise The error of OSM data when combining categories and the inaccurate boundary of original OSM data when delimited in the field lead to class noise</p></li>
 </ol>
 </section>
-<section id="reflection" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> 7.3 Reflection</h1>
+<section id="reflection" class="level1">
+<h1>7.3 Reflection</h1>
+<p>This week’s learning content helped me realize that classified data is not only used for classifying ground objects but also for classifying gases. This broadened my understanding of the potential applications of remote sensing imagery. Traditionally, urban air quality monitoring has relied heavily on data collected from monitoring stations, which comes with high economic costs. In some regions, governments have even closed monitoring stations near pollution sources to conceal air pollution levels. This practice affects the objectivity and accuracy of related research. If remote sensing imagery were used to monitor urban emissions, it could improve data accuracy while ensuring the public’s right to information.</p>
+<p>Additionally, I learned about the principles of supervised and unsupervised classification this week. Supervised classification involves providing training samples as a foundation for the model to learn and classify, while unsupervised classification automatically groups data based on spectral characteristics. With the advancement of large language models, can AI replace experts in selecting training samples? If this approach becomes feasible, would it reduce the cost of data analysis and empower data usage in less developed regions, or would it exacerbate inequalities in data access? This seems like a meaningful research topic to explore.</p>
+</section>
+<section id="references" class="level1">
+<h1>7.4 References</h1>
+<p>Gopinath, G. et al.&nbsp;(2020) Landuse classification of hyperspectral data by spectral angle mapper and support vector machine in humid tropical region of India. Earth science informatics. [Online] 13 (3), 633–640.</p>
+<p>Johnson, B. A. &amp; Iizuka, K. (2016) Integrating OpenStreetMap crowdsourced data and Landsat time-series imagery for rapid land use/land cover (LULC) mapping: Case study of the Laguna de Bay area of the Philippines. Applied geography (Sevenoaks). [Online] 67140–149.</p>
 
 
 </section>

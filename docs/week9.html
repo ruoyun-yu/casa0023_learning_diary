@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>week4 – casa0023_learning_diary</title>
+<title>week7 – casa0023_learning_diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">week3</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./week4.html" aria-current="page"> 
+    <a class="nav-link" href="./week4.html"> 
 <span class="menu-text">week4</span></a>
   </li>  
   <li class="nav-item">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">week</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./week9.html"> 
+    <a class="nav-link active" href="./week9.html" aria-current="page"> 
 <span class="menu-text">week9</span></a>
   </li>  
 </ul>
@@ -136,10 +136,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">4.1 Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">4.2 Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">4.3 Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">6.4 References</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">9.1 Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">9.2 Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">9.3 Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">9.4 References</a></li>
   </ul>
 </nav>
     </div>
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">week4</h1>
+<h1 class="title">week7</h1>
 </div>
 
 
@@ -166,35 +166,73 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="summary" class="level1">
-<h1>4.1 Summary</h1>
-<p>London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.</p>
-<p><img src="images/截屏2025-02-08 20.07.30.png" class="img-fluid" width="376"></p>
-<p><img src="images/截屏2025-02-08 20.38.14.png" class="img-fluid" width="385"></p>
-<p>However, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.</p>
-<p>Urban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. <a href="https://unhabitat.org/sites/default/files/2022/06/wcr_2022.pdf">《World Cities Report 2022: Envisaging the Future of Cities》</a>highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.</p>
-<p>In recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. <a href="https://www.london.gov.uk/sites/default/files/the_london_plan_2021.pdf">The London Plan 2021</a>, in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:</p>
-<p>-<strong>Policy G1 Green infrastructure</strong></p>
-<p>London’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.</p>
-<p>-<strong>Policy G7 Trees and woodlands</strong></p>
-<p>London’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest</p>
-<p>Although <a href="https://www.london.gov.uk/sites/default/files/london_city_resilience_strategy_2020_digital.pdf">the London City Resilience Strategy 2020</a> does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data.</p>
+<h1>9.1 Summary</h1>
+<p>This week’s lecture focused on SAR</p>
+<p><strong>1. What is SAR</strong>&nbsp;</p>
+<p>Synthetic Aperture Radar (SAR) is an active sensor. Compared to optical imagery, which relies on spectral characteristics, SAR imagery is based on backscatter. Short-wavelength sensors provide higher spatial resolution images but have weaker penetration capabilities. Long-wavelength sensors produce lower resolution images but can penetrate vegetation or thin surface layers.</p>
+<p><strong>2. Radar Incidence Direction &amp; Polarization</strong>&nbsp;</p>
+<p>Radar incidence direction and polarization are two different concepts. SAR acquires ground information from a side-looking angle, which helps avoid strong backscatter interference and provides terrain and target structure details. Sentinel-1 operates on both ascending and descending orbits. Imaging from different angles leads to different radar backscatter characteristics for buildings, so images from different orbits need to be analyzed separately. Polarization refers to the direction in which the electromagnetic wave vibrates.</p>
+<p><strong>3. Scattering Mechanism</strong>&nbsp;</p>
+<p>The brightness of a SAR image depends on the scattering mechanism of the surface; different surface types scatter radar waves in different ways. By using various polarizations, different types of ground information can be obtained.&nbsp;</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scattering Type</th>
+<th>Surface Occurrence</th>
+<th>Image Brightness</th>
+<th>Polarization Characteristic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Surface Scattering</td>
+<td>Water, smooth ground</td>
+<td>Very dark (black)</td>
+<td>Low backscatter</td>
+</tr>
+<tr class="even">
+<td>Volume Scattering</td>
+<td>Forests, vegetation</td>
+<td>Moderate (brighter)</td>
+<td>VH polarization is obvious</td>
+</tr>
+<tr class="odd">
+<td>Double-Bounce Scattering</td>
+<td>Urban buildings, vertical structures</td>
+<td>Very bright</td>
+<td>VV polarization is obvious</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Information Contained in SAR</strong>&nbsp;</p>
+<p>SAR data contains two main types of information: amplitude and phase. Amplitude indicates the strength of the returned radar signal, while phase records the wave peaks and troughs of the returned electromagnetic signal.</p>
+<p><strong>5. InSAR</strong>&nbsp;</p>
+<p>InSAR is a method that uses phase information to measure small ground changes. It can detect ground displacements on the centimeter scale. For example, if the ground level changes (such as subsidence due to an earthquake), the phase of the backscattered signal will change slightly. By comparing the phase difference between two images, the direction and magnitude of ground movement can be measured. InSAR can also be used to generate digital elevation models, providing high-precision maps of the ground or buildings.&nbsp;</p>
+<p>&nbsp;&nbsp; Methods for detecting abnormal changes:&nbsp;</p>
+<p>&nbsp;&nbsp; - Mean Analysis: Calculate the average backscatter intensity before and after the change; significant differences can be considered abnormal changes.&nbsp;</p>
+<p>&nbsp;&nbsp; - Variance Analysis: Calculate the standard deviation before and after the change; if the new mean exceeds the range of the standard deviation, it is considered an abnormal change.</p>
 </section>
 <section id="application" class="level1">
-<h1>4.2 Application</h1>
-<p>.Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study&nbsp;<em>《Quantifying urban forest structure with open-access remote sensing data sets》</em>uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.</p>
-<p><img src="images/截屏2025-02-08 23.55.40.png" class="img-fluid" width="474"></p>
-<p>Moreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《<em>Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》</em>employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.</p>
-<p>These studies demonstrate that remote sensing technology can provide efficient and accurate data support, enabling governments to develop more informed urban green space plans, optimize green infrastructure layouts, and assess their environmental and economic benefits</p>
+<h1>9.2 Application</h1>
+<p>SAR can record both phase and intensity information to study the deformation of objects, and is commonly used to monitor object movement. Urban and natural environments have different characteristics, so other methods and data are needed to supplement SAR’s limitations in research.</p>
+<p>In complex urban environments with dense buildings, SAR images can suffer from geometric distortions, making object segmentation difficult. Chisheng Wang and others introduced an object-oriented MT-InSAR (Obj-InSAR) framework, combining SAR images and 3D point clouds to generate 4D deformation point cloud data. The “4D” refers to 3D in space and 1D in deformation. The research steps include Object Segmentation, Parameter Estimation, Fine Alignment &amp; Geopositioning, and Generation of InSAR 4D Point Cloud. First, orthophotos are generated from 3D point clouds in the geographic coordinate system, then target segmentation is performed using the Segment Anything Model (SAM). By using a 3D lookup table to relate 3D coordinates and SAR pixels, each 3D geographic coordinate (X, Y, Z) can correspond to a SAR image pixel (r, a). This method overcomes the issue of losing facade information in complex urban environments caused by the original 2D lookup table, achieving precise target matching. Permanent Scatterers (PS) are selected to construct a hybrid network (Delaunay + fully connected network) for parameter estimation. Time series analysis is performed to remove errors and extract nonlinear deformation information, ultimately generating an accurate 4D deformation point cloud.</p>
+<p>In natural environments, such as measuring glacier movement, SAR images are prone to decorrelation due to atmospheric interference. In such cases, DInSAR, which relies on phase information, is not suitable. Instead, Offset Tracking, based on image intensity information, can be used. Offset Tracking selects two matching windows from two images, computes the similarity between them using Normalized Cross-Correlation, and finds the best matching point to obtain the displacement field of the object. Fan, Jinghui, and others compared the accuracy differences between the offset tracking technique based on SAR and point cloud calculation based on Terrestrial Laser Scanners. The study shows that the offset tracking technique depends on image quality and is more reliable when extracting large-scale glacier velocity fields.</p>
 </section>
 <section id="reflection" class="level1">
-<h1>4.3 Reflection</h1>
-<p>Remote sensing imagery can be used for monitoring urban forest structures and identifying potential planting areas, providing support for the protection and development of urban green infrastructure. Due to its spatial characteristics, remote sensing imagery offers a new perspective for urban management.</p>
-<p>Through this week’s learning, I believe that remote sensing imagery can also be utilized to evaluate urban green infrastructure development. Currently, many regions in China are implementing programs such as the Conversion of Farmland to Forest Program and the Permanent Basic Farmland Protection Program. The central and local governments set quantitative targets for cities regarding green infrastructure development and conservation. However, some cities, due to economic development needs, are unable to meet these requirements on their own. To fulfill the mandated targets, they collaborate with other cities through a mechanism known as “horizontal ecological compensation.”For example, if a provincial government requires City A to expand its forest area by 10 square kilometers within a year, but City A only has 5 square kilometers of available land for afforestation, it can compensate by expanding 5 square kilometers of forest in City B. In return, City A provides City B with financial compensation or other benefits to meet the provincial government’s requirements. I believe that remote sensing imagery can first be used to monitor whether local governments have met the green infrastructure targets set by higher authorities. Additionally, it can be employed to evaluate whether this “horizontal ecological compensation” mechanism effectively achieves ecological restoration.</p>
+<h1>9.3 Reflection</h1>
+<p>In my previous studies, I had some understanding of SAR, but it was limited to its operational principles. This week’s learning introduced me to the ability of SAR sensors to extract phase information and the value of InSAR in detecting displacement. This made me think about how this technology could be applied to urban village redevelopment in China. Urban village redevelopment is a major urban renewal strategy, involving the demolition and reconstruction or renovation of villages within built-up urban areas. A key challenge in planning redevelopment is accurately measuring the floor area of existing buildings. Currently, this is often done through manual surveys, which are costly in terms of both labor and resources. Through this week’s learning, I began to consider whether SAR data could be used for preliminary area estimation.</p>
+<p>Furthermore, I believe SAR could also be useful for monitoring illegal building extensions. Since compensation amounts are often tied to building area, some individuals engage in unauthorized construction. Existing monitoring methods mainly rely on detecting changes in surface materials, such as identifying whether bare land has been covered with concrete. To evade detection, many illegal extensions maintain the original rooftop material, making them difficult to identify using conventional methods. However, if InSAR techniques were used to analyze time-series images and detect height changes in buildings, it might offer a more effective way to monitor such illegal construction activities. Urban management departments could potentially develop models based on this approach to enhance urban governance.</p>
 </section>
 <section id="references" class="level1">
-<h1>6.4 References</h1>
-<p>Baines, O. et al.&nbsp;(2020) Quantifying urban forest structure with open-access remote sensing data sets.&nbsp;<em>Urban forestry &amp; urban greening</em>. [Online] 50126653-.</p>
-<p>Merry, K. et al.&nbsp;(2013) Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States. Computers, environment and urban systems. [Online] 3939–47.</p>
+<h1>9.4 References</h1>
+<p>Wang, C. et al.&nbsp;(2024) A New Object-Oriented SAR Interferometry Framework for Monitoring Urban Deformation. IEEE transactions on geoscience and remote sensing. [Online] 621–11.</p>
+<p>Fan, J. et al.&nbsp;(2019) Monitoring and Analyzing Mountain Glacier Surface Movement Using SAR Data and a Terrestrial Laser Scanner: A Case Study of the Himalayas North Slope Glacier Area. Remote sensing (Basel, Switzerland). [Online] 11 (6), 625-.</p>
 
 
 </section>

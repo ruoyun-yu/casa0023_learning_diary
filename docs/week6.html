@@ -89,8 +89,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./week1.html"> 
+<span class="menu-text">week1</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./week2.html"> 
 <span class="menu-text">week2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week3.html"> 
+<span class="menu-text">week3</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./week4.html"> 
@@ -103,6 +111,14 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./week7.html"> 
 <span class="menu-text">week7</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week8.html"> 
+<span class="menu-text">week</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./week9.html"> 
+<span class="menu-text">week9</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -122,6 +138,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">6.1 Summary</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">6.2 Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">6.3 Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">6.4 References</a></li>
   </ul>
 </nav>
     </div>
@@ -212,6 +230,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level1">
 <h1>6.2 Application</h1>
+<p>There are many tools available for remote sensing image analysis, each differing in functionality, data processing capability, and applicable domains. To understand the differences between various platforms, I read two papers this week that used different analytical platforms.</p>
+<p>Isabela Xavier Floreano used GEE to study ten years of rainforest LULC changes in a state, performed area statistics using QGIS, and used TerrSet for prediction. Since the study area was large and the time span was long, the training samples for supervised classification were substantial. GEE, as a cloud computing platform, can efficiently process large-scale remote sensing datasets and supports parallel computing, making it well-suited for the computational demands of this study. However, Isabela Xavier Floreano did not perform all operations using GEE alone.</p>
+<p>Marwa Waseem A. Halmy, on the other hand, used only IDRISI Selva to classify and predict land use in a desert area. Unlike GEE, IDRISI Selva is a desktop software that only supports single-machine operation but can function offline. It has built-in analytical tools and does not require programming. Marwa Waseem A. Halmy’s study focused on a relatively small land area, meaning that despite IDRISI Selva’s reliance on local hardware, it was still sufficient for the computational requirements. Overall, GEE has distinct advantages in large-area and long-term studies but requires some programming knowledge. For certain analyses, it may still have limitations compared to specific platforms. Other analytical platforms offer unique advantages, such as built-in tools that do not require programming knowledge.</p>
+<p>In addition to gaining insights into remote sensing image analysis tools, the papers I read this week also deepened my understanding of land use and land cover (LULC) change prediction methods. Both studies used Markov-CA for LULC prediction. The core concept of the Markov Chain is that if the system’s previous state is known, the probability of the system being in a particular state at a specific time can be determined. The Markov Chain can calculate the frequency of each category’s changes between two periods and the proportion of each category converting to others. Cellular Automata is a grid-based dynamic modeling method that assumes cell changes are influenced by their surrounding areas and is used to simulate spatial change processes.</p>
+<p>Both studies used driver variables or suitability factors—such as distance to roads, city centers, and water bodies—to determine the likelihood of LULC changes. Isabela Xavier Floreano applied a Multi-Layer Perceptron (MLP) to compute the probability of each pixel being suitable for conversion to a specific LULC category, generating a suitability map. In contrast, Marwa Waseem A. Halmy used WLC (Weighted Linear Combination) and Boolean constraints. Regarding neighborhood influence modeling, MLP inherently learns neighborhood effects and does not explicitly adjust suitability based on neighboring pixels. Meanwhile, Marwa Waseem A. Halmy’s study applied a 5×5 contiguity filter, using weighted averaging to adjust suitability, resulting in smoother prediction outcomes.</p>
+<p>Additionally, Marwa Waseem A. Halmy’s study employed valuable methods for LULC classification. When using Random Forest for LULC classification, the study incorporated auxiliary data such as slope, terrain roughness index, and topographic wetness index in addition to spectral data, enhancing classification accuracy.</p>
+</section>
+<section id="reflection" class="level1">
+<h1>6.3 Reflection</h1>
+<p>During my undergraduate studies, I frequently used ENVI for remote sensing analysis, which required downloading imagery before processing. When working with multi-temporal or large-area datasets, I often encountered performance limitations due to hardware constraints. Additionally, modifying the study area meant re-importing and reprocessing the data, which was time-consuming. In contrast, Google Earth Engine (GEE) provides pre-loaded datasets and runs analyses on Google’s servers with parallel computing, significantly improving processing speed and reducing hardware requirements. Since analyses are conducted through code, they can be easily modified, replicated, and shared on open-source platforms.</p>
+<p>Beyond technical efficiency, GEE also promotes data accessibility and fairness. Remote sensing analysis traditionally requires expensive hardware, making it inaccessible to economically disadvantaged regions. Although satellite imagery covers the entire globe, many underdeveloped areas lack the resources to utilize it. By lowering the technical and financial barriers, GEE allows anyone with basic equipment to perform remote sensing analysis using open-source code.</p>
+<p>Additionally, GEE Apps enable interactive visualization, making it easier to present complex spatial data to non-experts, such as the general public. Governments can leverage this capability in official reports to enhance transparency and ensure public access to critical information.</p>
+</section>
+<section id="references" class="level1">
+<h1>6.4 References</h1>
+<p>Halmy, M. W. A. et al.&nbsp;(2015) Land use/land cover change detection and prediction in the north-western coastal desert of Egypt using Markov-CA. Applied geography (Sevenoaks). [Online] 63101–112.</p>
+<p>Floreano, I. X. &amp; de Moraes, L. A. F. (2021) Land use/land cover (LULC) analysis (2009–2019) with Google Earth Engine and 2030 prediction using Markov-CA in the Rondônia State, Brazil.&nbsp;<em>Environmental monitoring and assessment</em>. [Online] 193 (4), 239-.</p>
 
 
 </section>

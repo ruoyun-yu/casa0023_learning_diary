@@ -8,14 +8,22 @@ website:
   title: "casa0023_learning_diary"
   navbar:
     left:
+      - href: week1.qmd
+        text: "week1"
       - href: week2.qmd
-        text: "week2"
+        text: "week2" 
+      - href: week3.qmd
+        text: "week3"
       - href: week4.qmd
         text: "week4"
       - href: week6.qmd
         text: "week6"
       - href: week7.qmd
         text: "week7"
+      - href: week8.qmd
+        text: "week"
+      - href: week9.qmd
+        text: "week9"
 format:
   html:
     theme: 

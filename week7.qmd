@@ -2,7 +2,6 @@
 title: "week7"
 format: html
 editor: visual
-number-sections: true
 ---
 
 # 7.1 Summary
@@ -116,3 +115,13 @@ III) Generation of new samples: at the selected interpolation points, a new mino
     Landsat data is affected by clouds and has attribute noise The error of OSM data when combining categories and the inaccurate boundary of original OSM data when delimited in the field lead to class noise
 
 # 7.3 Reflection
+
+This week's learning content helped me realize that classified data is not only used for classifying ground objects but also for classifying gases. This broadened my understanding of the potential applications of remote sensing imagery. Traditionally, urban air quality monitoring has relied heavily on data collected from monitoring stations, which comes with high economic costs. In some regions, governments have even closed monitoring stations near pollution sources to conceal air pollution levels. This practice affects the objectivity and accuracy of related research. If remote sensing imagery were used to monitor urban emissions, it could improve data accuracy while ensuring the public's right to information.
+
+Additionally, I learned about the principles of supervised and unsupervised classification this week. Supervised classification involves providing training samples as a foundation for the model to learn and classify, while unsupervised classification automatically groups data based on spectral characteristics. With the advancement of large language models, can AI replace experts in selecting training samples? If this approach becomes feasible, would it reduce the cost of data analysis and empower data usage in less developed regions, or would it exacerbate inequalities in data access? This seems like a meaningful research topic to explore.
+
+# 7.4 References
+
+Gopinath, G. et al. (2020) Landuse classification of hyperspectral data by spectral angle mapper and support vector machine in humid tropical region of India. Earth science informatics. \[Online\] 13 (3), 633–640.
+
+Johnson, B. A. & Iizuka, K. (2016) Integrating OpenStreetMap crowdsourced data and Landsat time-series imagery for rapid land use/land cover (LULC) mapping: Case study of the Laguna de Bay area of the Philippines. Applied geography (Sevenoaks). \[Online\] 67140–149.

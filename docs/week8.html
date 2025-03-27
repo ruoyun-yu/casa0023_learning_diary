@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>week4 – casa0023_learning_diary</title>
+<title>week7 – casa0023_learning_diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">week3</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./week4.html" aria-current="page"> 
+    <a class="nav-link" href="./week4.html"> 
 <span class="menu-text">week4</span></a>
   </li>  
   <li class="nav-item">
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">week7</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./week8.html"> 
+    <a class="nav-link active" href="./week8.html" aria-current="page"> 
 <span class="menu-text">week</span></a>
   </li>  
   <li class="nav-item">
@@ -136,10 +136,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">4.1 Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">4.2 Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">4.3 Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">6.4 References</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">8.1 Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">8.2 Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">8.3 Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">8.4 References</a></li>
   </ul>
 </nav>
     </div>
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">week4</h1>
+<h1 class="title">week7</h1>
 </div>
 
 
@@ -166,35 +166,81 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="summary" class="level1">
-<h1>4.1 Summary</h1>
-<p>London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.</p>
-<p><img src="images/截屏2025-02-08 20.07.30.png" class="img-fluid" width="376"></p>
-<p><img src="images/截屏2025-02-08 20.38.14.png" class="img-fluid" width="385"></p>
-<p>However, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.</p>
-<p>Urban resilience refers to a city’s ability to withstand and recover from shocks and stresses, encompassing economic, social, environmental, and institutional resilience. <a href="https://unhabitat.org/sites/default/files/2022/06/wcr_2022.pdf">《World Cities Report 2022: Envisaging the Future of Cities》</a>highlights that investing in green-blue infrastructure is one of the two key areas essential for enhancing environmental resilience. Blue-green infrastructure includes the ‘green’ and ‘blue’ features of our towns and cities that provide environmental benefits and contribute to our quality of life.</p>
-<p>In recent years, London has increased its focus on urban resilience and green infrastructure, as reflected in various policies. <a href="https://www.london.gov.uk/sites/default/files/the_london_plan_2021.pdf">The London Plan 2021</a>, in Chapter 8 (Green Infrastructure), outlines specific requirements for green infrastructure development:</p>
-<p>-<strong>Policy G1 Green infrastructure</strong></p>
-<p>London’s network of green and open spaces, and green features in the built environment, should be protected and enhanced. Development Plans and area-based strategies should identify key green infrastructure assets, along with their existing and potential functions.</p>
-<p>-<strong>Policy G7 Trees and woodlands</strong></p>
-<p>London’s urban forest and woodlands should be protected and maintained, and new trees and woodlands should be planted in appropriate locations in order to increase the extent of London’s urban forest</p>
-<p>Although <a href="https://www.london.gov.uk/sites/default/files/london_city_resilience_strategy_2020_digital.pdf">the London City Resilience Strategy 2020</a> does not set explicit targets for green-blue infrastructure, it emphasizes the importance of data in infrastructure planning and advocates for improving the resilience of London’s infrastructure systems while prioritizing investment through the use of data.</p>
+<h1>8.1 Summary</h1>
+<p>This week’s lecture introduced a new land cover classification dataset called Dynamic World based on a Semi-supervised approach, Object-Based Image Analysis, Sub-pixel analysis – two new classification methods – and methods for classification accuracy assessment.</p>
+<p><strong>1. &nbsp;A New Real-time Land Cover Classification Dataset – Dynamic World</strong></p>
+<ol type="i">
+<li>Data Classification Method</li>
+</ol>
+<ul>
+<li><p>The dataset adopts a semi-supervised classification approach, which combines both supervised and unsupervised learning.</p></li>
+<li><p>The globe is divided into 14 biomes, and sampling is conducted according to geographic regions and biomes.</p></li>
+<li><p>Annotators classify Surface Reflectance and assign different weights based on professional expertise.</p></li>
+<li><p>Top of Atmosphere Reflectance is used for training.</p></li>
+</ul>
+<ol start="2" type="i">
+<li>Advantages</li>
+</ol>
+<p>&nbsp;&nbsp; It features continuously evolving predictions based on real-time data input and is constantly improved through deep learning methods, thereby enhancing the accuracy and relevance of the predictions.</p>
+<ol start="3" type="i">
+<li>Disadvantages</li>
+</ol>
+<ul>
+<li><p>The data is not clear at local scales and is only suitable for large-scale studies (national, global scale).</p></li>
+<li><p>Excessive preprocessing and filtering lead to data smoothing; the combination of the 50×50m minimum mapping unit and the moving window of the CNN may cause blurring at local scales due to information integration and spatial compression.</p></li>
+</ul>
+<p><strong>2. Object-Based Image Analysis (OBIA)</strong></p>
+<ol type="i">
+<li>Definition</li>
+</ol>
+<p>&nbsp;&nbsp; It aggregates similar pixels into superpixels, and then these objects are used for classification or analysis.</p>
+<ol start="2" type="i">
+<li>Method – Simple Linear Iterative Clustering</li>
+</ol>
+<ul>
+<li><p>It calculates spatial distance + color similarity, iteratively optimizing the segmentation results and adjusting the superpixel centers.</p></li>
+<li><p>Parameters affecting the shape and distribution of superpixels: The S value (the distance between initial points) determines the size of the superpixels, and the m value (compactness) controls the balance between spatial distance and color similarity.</p></li>
+</ul>
+<p><strong>3. &nbsp;Sub-pixel Analysis</strong></p>
+<ol type="i">
+<li>Definition</li>
+</ol>
+<p>&nbsp;&nbsp; It assumes that a single pixel is composed of multiple types of land cover.</p>
+<ol start="2" type="i">
+<li>Methods</li>
+</ol>
+<ul>
+<li><p>Select Spectrally Pure Endmembers (e.g., water, vegetation, soil).</p></li>
+<li><p>Use Linear Spectral Unmixing (LSU) to calculate the proportion of each endmember.</p></li>
+</ul>
+<ol start="3" type="i">
+<li>Shortage</li>
+</ol>
+<p>&nbsp;&nbsp; There are errors because it is very difficult to find completely pure endmembers.</p>
+<p><strong>4. Accuracy Assessment</strong></p>
+<ol type="i">
+<li>Confusion Matrix</li>
+</ol>
+<p>&nbsp;&nbsp; Producer’s Accuracy = TP / (TP + FN)</p>
+<p>&nbsp;&nbsp; User’s Accuracy =TP/ (TP + FP)</p>
+<p>&nbsp;&nbsp; Overall Accuracy = (TP +TN)/(TP+FP+FN+TN)</p>
+<p>We should choose the appropriate data and methods based on the research objectives and scale. Pixel-based classification is suitable for large-scale, low-resolution data. Object-based classification is suitable for high-resolution data. Sub-pixel analysis is suitable for mixed land cover areas, such as urban regions.</p>
 </section>
 <section id="application" class="level1">
-<h1>4.2 Application</h1>
-<p>.Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study&nbsp;<em>《Quantifying urban forest structure with open-access remote sensing data sets》</em>uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.</p>
-<p><img src="images/截屏2025-02-08 23.55.40.png" class="img-fluid" width="474"></p>
-<p>Moreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《<em>Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》</em>employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.</p>
-<p>These studies demonstrate that remote sensing technology can provide efficient and accurate data support, enabling governments to develop more informed urban green space plans, optimize green infrastructure layouts, and assess their environmental and economic benefits</p>
+<h1>8.2 Application</h1>
+<p>Different classification methods result in variations in classification accuracy and the spatial patterns of classification results. Depending on the research objective, different classification methods can be combined with various spatial analysis techniques. The sub-pixel model assumes that a single pixel contains multiple land cover types, which can compensate for the limitations of image resolution and provide high-accuracy estimates based on low-resolution data. For example, Narumasa Tsutsumida monitored impervious surface areas (ISA) in Jakarta using MODIS data.Object-based classification produces contiguous and block-like classification results, which can be converted into points to calculate density for spatial statistical analysis. For example, the study by Ngoc Tuyen Nguyen et al.&nbsp;combined object-based classification with kernel density estimation (KDE) to analyze the spatial distribution of impervious surfaces in Ho Chi Minh City, identifying hotspot regions and temporal changes.</p>
+<p>Narumasa Tsutsumida’s research focused on developing a classification model to overcome the challenges of mixed pixels and low resolution. The study consisted of four main stages: data preprocessing, reference data collection, model development, and model comparison. First, the data underwent preprocessing, where cloud-covered areas were masked out, and missing values were interpolated using the double logistic function in TIMESAT to smooth the EVI time series. A total of 1,000 regions were selected, and the ISA proportion within each region was estimated based on high-resolution imagery. The reference data was then divided into training and validation sets. A random forest regression model was used, with EVI values as input variables and ISA proportions as output variables. Finally, a pixel classification model was constructed based on different thresholds (25%, 50%, and 75%), and the accuracy differences were compared using overall accuracy and %RMSE as evaluation metrics.</p>
+<p>Ngoc Tuyen Nguyen’s study on impervious surfaces in Ho Chi Minh City was divided into two main parts: land use classification and spatial statistical analysis. The land use classification process included three steps: spectral index calculation, segmentation, and classification. First, the modified normalized difference water index (MNDWI), enhanced normalized difference impervious surface index (ENDISI), and normalized difference vegetation index (NDVI) were calculated based on preprocessed imagery. The images were then segmented into small single-pixel objects, which were merged based on similarity or local homogeneity. The segmentation process was controlled by compactness, scale parameter, and shape parameters. Using the class hierarchy method, land cover was classified into impervious areas, bare land, and other based on historical spectral index thresholds, location, shape, texture, and other statistical information.After classification, impervious surface pixels were converted into point data, and the KDE method was applied to calculate impervious surface density. Spatial statistical analyses were then performed based on the density data, including spatial autocorrelation analysis, optimized hotspot analysis, and emerging hotspot analysis. Spatial autocorrelation analysis was used to detect the spatial dependence of observations, optimized hotspot analysis identified clusters of ISA hotspots and cold spots, and emerging hotspot analysis tracked temporal changes in ISA hotspots.</p>
 </section>
 <section id="reflection" class="level1">
-<h1>4.3 Reflection</h1>
-<p>Remote sensing imagery can be used for monitoring urban forest structures and identifying potential planting areas, providing support for the protection and development of urban green infrastructure. Due to its spatial characteristics, remote sensing imagery offers a new perspective for urban management.</p>
-<p>Through this week’s learning, I believe that remote sensing imagery can also be utilized to evaluate urban green infrastructure development. Currently, many regions in China are implementing programs such as the Conversion of Farmland to Forest Program and the Permanent Basic Farmland Protection Program. The central and local governments set quantitative targets for cities regarding green infrastructure development and conservation. However, some cities, due to economic development needs, are unable to meet these requirements on their own. To fulfill the mandated targets, they collaborate with other cities through a mechanism known as “horizontal ecological compensation.”For example, if a provincial government requires City A to expand its forest area by 10 square kilometers within a year, but City A only has 5 square kilometers of available land for afforestation, it can compensate by expanding 5 square kilometers of forest in City B. In return, City A provides City B with financial compensation or other benefits to meet the provincial government’s requirements. I believe that remote sensing imagery can first be used to monitor whether local governments have met the green infrastructure targets set by higher authorities. Additionally, it can be employed to evaluate whether this “horizontal ecological compensation” mechanism effectively achieves ecological restoration.</p>
+<h1>8.3 Reflection</h1>
+<p>In my undergraduate thesis, I studied the spatial distribution characteristics of land expansion in Shenzhen. At that time, I used a relatively crude method, which divided the city into eight sectors based on the urban geometric center and calculated the differences in newly added land among these sectors. This method had limitations in accuracy, as it could not precisely identify the specific locations of newly added land. Instead, it only reflected the overall scale of land expansion and failed to capture changes in the number of new development projects. For example, some areas might have a large number of small-scale development projects, while others might have only a few large-scale projects, and this method could not reveal such differences.</p>
+<p>During this week’s study, I learned about object-based classification methods and came across research that combines object-based classification with spatial statistical analysis. This approach converts classified objects into point data for further statistical analysis. I believe this method can better optimize my previous research and allow for a more in-depth exploration of boundary differences in land development.</p>
 </section>
 <section id="references" class="level1">
-<h1>6.4 References</h1>
-<p>Baines, O. et al.&nbsp;(2020) Quantifying urban forest structure with open-access remote sensing data sets.&nbsp;<em>Urban forestry &amp; urban greening</em>. [Online] 50126653-.</p>
-<p>Merry, K. et al.&nbsp;(2013) Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States. Computers, environment and urban systems. [Online] 3939–47.</p>
+<h1>8.4 References</h1>
+<p>Nguyen, N. T. et al.&nbsp;(2024) Identifying impervious surface hot spots in Ho Chi Minh City using object-based classification and spatial statistics. IOP conference series. Earth and environmental science. [Online] 1349 (1), 12030-.</p>
+<p>Tsutsumida, N. et al.&nbsp;(2016) Sub-Pixel Classification of MODIS EVI for Annual Mappings of Impervious Surface Areas. Remote sensing (Basel, Switzerland). [Online] 8 (2), 143-.</p>
 
 
 </section>

@@ -4,7 +4,8 @@ format: html
 editor: visual
 ---
 
-## 2.1 
+## 2.1
 
-```{r}
+```{r, echo=FALSE,warning=FALSE, message=FALSE}
 xaringanExtra::embed_xaringan(url = "https://raw.githubusercontent.com/ruoyun-yu/casa0023_learning_diary/main/week2_iceye.html", ratio = "16:9")
+```

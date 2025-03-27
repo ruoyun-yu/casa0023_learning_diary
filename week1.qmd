@@ -1,0 +1,72 @@
+---
+title: "week7"
+format: html
+editor: visual
+---
+
+# 1.1 Summary
+
+This week's lecture covered several key topics: how to create a spectral signature in QGIS, generate a raster stack, and create a true color composite. Additionally, I learned how to adjust image color display and create a true color composite in SNAP software. In R, I explored extracting, analyzing, and visualizing spectral reflectance from different land cover types using Sentinel-2 and Landsat 8-9 satellite imagery to compare spectral signatures.
+
+Some key points include: Sentinel-2 contains 13 bands, while Landsat 8-9 contains 11 bands. Since the overall resolution of the two datasets differs, and even within the same sensor, different bands have different resolutions, resampling is required before processing. In practical applications, true color images help intuitively understand surface features, especially for non-experts. Creating spectral signatures allows for more precise identification of land cover types, making them useful for land use classification. When identifying specific land cover types, especially small areas, adjusting image color display enhances differentiation and recognition. Comparing spectral reflectance characteristics across land cover types provides a reference for subsequent land use classification.
+
+# 1.2 Application
+
+The calculation of remote sensing indices can be applied to land use studies, such as identifying urban built-up areas. Due to the long time span of remote sensing imagery, it is also suitable for longitudinal studies, such as analyzing urban expansion over time. Additionally, because remote sensing images provide global coverage, they can be used for large-scale and regional comparative studies. Overall, Landsat has a longer time span than Sentinel-2, making it suitable for longitudinal studies, while Sentinel-2 has more spectral bands, making it more appropriate for high-precision studies, such as identifying vegetation differences.
+
+For identifying the distribution and expansion of urban land (impervious surfaces), Landsat datasets offer long time series, wide spatial coverage, high standardization, and consistency, as well as relatively high spatial resolution, making them suitable for this type of research.
+
+Xiaoping Liu et al. proposed the Normalized Urban Area Composite Index (NUACI), based on multi-temporal global urban land maps derived from Landsat imagery every five years from 1990 to 2010, to create 30m resolution global built-up area maps. The study classified cities based on population size and economic conditions and introduced NUACI by combining the Normalized Difference Water Index (NDWI), Normalized Difference Vegetation Index (NDVI), and Normalized Difference Built-up Index (NDBI). NUACI’s central points and segmentation thresholds were calibrated according to different urban ecological zones.
+
+Additionally, I gained the following insights from this paper:
+
+1.  Calibrating key indices by dividing urban ecological zones to improve accuracy
+
+    -   This study considers both natural and socio-economic differences by incorporating biome types, urban topology, and economic development levels when defining urban ecological zones.
+
+However, I still have some questions regarding this paper:
+
+1.  Does NUACI exhibit significant accuracy differences when applied to different remote sensing datasets? If so, how should adjustments be made?
+2.  Is the use of a binary mask from DMSP-OLS nighttime light data in NUACI calculations too rigid? Could it overlook unlit artificial infrastructure?
+
+For tropical regions with high rainfall, frequent cloud cover, and complex vegetation types, Sentinel-2 datasets, with high spatial resolution, multispectral capabilities, and frequent revisit times, are well-suited for research needs. This study explores whether combining remote sensing data from both the dry and wet seasons enhances land use classification accuracy. The study classifies remote sensing datasets into four categories:
+
+-   Pure dry-season dataset
+
+-   Pure wet-season dataset
+
+-   Full-year dataset
+
+-   Combined dry-season and wet-season dataset
+
+Each dataset was trained using four different classifiers: MLR, IK-NN, SVM, and RF, and the results were compared. The study focuses on tropical regions with complex climate conditions (frequent cloud cover and fog), rapidly changing vegetation types, and intricate land use structures.
+
+Additionally, I gained the following insights from this paper:
+
+1.  Image Preprocessing
+
+    -   The Earth’s orbital motion affects solar illumination geometry, which influences vegetation reflectance.
+
+    -   This study applied several preprocessing steps before analysis: cloud and shadow removal, BRDF and terrain correction, median compositing, resampling, and image cropping.
+
+2.  Sample Data Selection
+
+    -   Compared to other studies, this research used a more comprehensive and objective sample dataset, including field observations, target sampling, and simple random sampling using ultra-high-resolution imagery.
+
+3.  Accuracy Assessment Metrics
+
+    -   The study used overall accuracy (OA), Kappa coefficient (K), producer’s accuracy (PA), and user’s accuracy (UA) to evaluate classification accuracy.
+
+    -   Factors affecting classification accuracy include sensor type, sources of training and accuracy assessment data, the number of classes, and the classification method.
+
+# 1.3 Reflection
+
+This week, I have gained a renewed understanding that remote sensing can be achieved through various types of sensors, not just satellites. As far as I know, high-resolution remote sensing imagery is often very expensive, and for small-area studies, purchasing an entire tile may not be necessary, as they typically cover hundreds of kilometers. Perhaps drones can enhance the ability of local agencies to acquire small-area data while also improving data update frequency. Developing general analytical models for drone-acquired imagery might contribute to data empowerment in local governance.
+
+However, I still have a question. Currently, the time span of a single sensor rarely exceeds twenty years. For long-term studies, such as analyzing changes in China’s forest area since 1980, it is necessary to compare imagery collected by different sensors. The resampling methods I learned this week can indeed address differences in the number of bands and resolution between sensors. However, how can we overcome differences in the accuracy and sensitivity of sensors in detecting reflected waves? How do such precision differences impact research results, and how can we minimize their effects? These are the questions I hope to explore further.
+
+# 1.4 References
+
+Liu, X. et al. (2018) High-resolution multi-temporal mapping of global urban land using Landsat images based on the Google Earth Engine Platform. Remote sensing of environment. \[Online\] 209227–239.
+
+Nguyen, H. T. T. et al. (2020) Land Use/Land Cover Mapping Using Multitemporal Sentinel-2 Imagery and Four Classification Methods—A Case Study from Dak Nong, Vietnam. Remote sensing (Basel, Switzerland). \[Online\] 12 (9), 1367-.
