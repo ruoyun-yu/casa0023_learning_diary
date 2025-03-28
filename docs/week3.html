@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>week4 – casa0023_learning_diary</title>
+<title>week3 – casa0023_learning_diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">week4</h1>
+<h1 class="title">week3</h1>
 </div>
 
 
@@ -167,6 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level1">
 <h1>3.1 Summary</h1>
+<p>This week’s lecture focuses on how landsat operates and images correction</p>
 <p><strong>1. Digital Multispectral Camera (MSS)</strong>&nbsp;</p>
 <p>i．The Standard for Remote Sensing&nbsp;</p>
 <p>i) MSS has become the standard for remote sensing.&nbsp;</p>
@@ -230,12 +231,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level1">
 <h1>3.2 Application</h1>
+<p><strong>Correction aims to reduce errors.</strong>&nbsp;In different scenarios, slight variations can lead to changes in the reflectance of surface features. Correction is applied to address errors caused by these variations. For example, in the infrared band, the reflectance of clear water is close to zero. However, most water bodies contain suspended particles, chlorophyll, and colored dissolved organic matter (CDOM), which affect their reflectance.</p>
+<p>Marcela Pereira-Sandoval focused on the unique characteristics of inland lakes compared to other water bodies and compared the performance of different atmospheric correction processors in various types of inland waters. First, multiple sample water bodies were selected, and based on in situ measurements of chlorophyll-a concentration and Secchi disk depth, the water bodies were classified into three categories: ultra-oligotrophic to oligotrophic, mesotrophic to eutrophic, and hypertrophic. Six atmospheric correction processors with different principles—ACOLITE, C2RCC, C2RCCCX, iCOR, Polymer, and Sen2Cor—were used to process the images. By comparing the corrected image reflectance with in situ measured reflectance, the performance of the processors was evaluated. The study showed that different processors exhibited varying correction effects, and even the same processor performed differently across different types of water bodies. Therefore, accurately understanding surface characteristics is crucial for improving correction quality.</p>
+<p>L. Yan conducted research on geometric correction and proposed a new method for characterizing and improving the geometric distortion of Landsat MSS images using Landsat 8 and 9 OLI data. This provides a new approach for long-term studies combining data from different sensors. The study employed&nbsp;<strong>least-squares dense matching (LSM) + a many-to-many matching strategy</strong>&nbsp;to establish a network of tie points between MSS images and OLI L1TP images. A&nbsp;<strong>second-order polynomial + radial basis function (RBF)</strong>&nbsp;was used to derive the mapping relationship, and the images were reprojected using the&nbsp;<strong>inverse gridding method + bilinear resampling</strong>. Finally, LSM was applied again to verify whether the corrected MSS images were aligned with the OLI images, and RMSE was calculated to assess the correction accuracy.</p>
+<p>Compared to one-to-one and one-to-many matching strategies, the many-to-many matching strategy used in this study provided more matching opportunities, allowing for a more effective capture of geometric distortions between images. However, it is computationally expensive and not suitable for large-scale studies. Although this geometric correction method has been validated in multiple study areas, its global application would require consideration of factors such as terrain variations and cloud cover.</p>
+<p><strong>After reading these papers, I still have the following question:</strong></p>
+<ol type="1">
+<li>Do atmospheric component concentrations vary with geographic location? If the concentrations differ, will their impact on surface reflectance also vary? If the variation remains approximately the same within a certain range, where is the threshold?</li>
+</ol>
 </section>
 <section id="reflection" class="level1">
 <h1>3.3 Reflection</h1>
+<p>When performing corrections, we need to understand the causes of errors and adjust the correction methods accordingly. Additionally, we should critically evaluate existing correction methods and select or modify them based on the characteristics of the study area. For example, atmospheric correction methods that assume water bodies have zero reflectance in the infrared band may not be applicable to eutrophic waters.</p>
+<p>I also found that improving correction accuracy and controlling computational costs are often conflicting objectives. In practical applications, a balance must be struck based on research needs. Regions with extreme weather conditions, such as tropical and polar areas, often face greater challenges in atmospheric correction. However, it is important to acknowledge that these areas are often located in developing countries, where there is a lack of technical and financial resources for data processing. In some cases, achieving extremely high accuracy may not be meaningful. Instead, developing a cost-effective correction method that maintains errors within an acceptable range could be more valuable.</p>
 </section>
 <section id="references" class="level1">
 <h1>3.4 References</h1>
+<p>Yan, L. &amp; Roy, D. P. (2025) Using Landsat 8 and 9 operational land imager (OLI) data to characterize geometric distortion and improve geometric correction of Landsat Multispectral Scanner (MSS) imagery. Remote sensing of environment. [Online] 321114679-.</p>
+<p>Pereira-Sandoval, M. et al.&nbsp;(2019) Evaluation of Atmospheric Correction Algorithms over Spanish Inland Waters for Sentinel-2 Multi Spectral Imagery Data. Remote sensing (Basel, Switzerland). [Online] 11 (12), 1469-.</p>
 
 
 </section>
