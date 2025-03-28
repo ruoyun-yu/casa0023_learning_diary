@@ -1,5 +1,5 @@
 ---
-title: "week7"
+title: "Week9 SAR"
 format: html
 editor: visual
 ---
@@ -21,7 +21,7 @@ Radar incidence direction and polarization are two different concepts. SAR acqui
 The brightness of a SAR image depends on the scattering mechanism of the surface; different surface types scatter radar waves in different ways. By using various polarizations, different types of ground information can be obtained. 
 
 | Scattering Type | Surface Occurrence | Image Brightness | Polarization Characteristic |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | Surface Scattering | Water, smooth ground | Very dark (black) | Low backscatter |
 | Volume Scattering | Forests, vegetation | Moderate (brighter) | VH polarization is obvious |
 | Double-Bounce Scattering | Urban buildings, vertical structures | Very bright | VV polarization is obvious |

@@ -21,7 +21,7 @@ website:
       - href: week7.qmd
         text: "week7"
       - href: week8.qmd
-        text: "week"
+        text: "week8"
       - href: week9.qmd
         text: "week9"
 format:

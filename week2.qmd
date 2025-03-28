@@ -1,5 +1,5 @@
 ---
-title: "week2"
+title: "Week2 Xaringan & Satellite"
 format: html
 editor: visual
 ---
