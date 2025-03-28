@@ -4,7 +4,9 @@ format: html
 editor: visual
 ---
 
-## 2.1
+## 2.1 xaringan
+
+This week's lecture focuses on how to create slides using xaringan and create a personal website with Quarto.
 
 ```{r, echo=FALSE,warning=FALSE, message=FALSE}
 xaringanExtra::embed_xaringan(url = "https://ruoyun-yu.github.io/CASA023_week2/#1", ratio = "16:9")
