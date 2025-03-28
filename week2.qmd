@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-## 2.1 xaringan
+# 2.1 xaringan
 
 This week's lecture focuses on how to create slides using xaringan and create a personal website with Quarto.
 
