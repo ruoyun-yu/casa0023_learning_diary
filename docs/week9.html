@@ -222,7 +222,22 @@ ul.task-list li input[type="checkbox"] {
 <h1>9.2 Application</h1>
 <p>SAR can record both phase and intensity information to study the deformation of objects, and is commonly used to monitor object movement. Urban and natural environments have different characteristics, so other methods and data are needed to supplement SAR’s limitations in research.</p>
 <p>In complex urban environments with dense buildings, SAR images can suffer from geometric distortions, making object segmentation difficult. Chisheng Wang and others introduced an object-oriented MT-InSAR (Obj-InSAR) framework, combining SAR images and 3D point clouds to generate 4D deformation point cloud data. The “4D” refers to 3D in space and 1D in deformation. The research steps include Object Segmentation, Parameter Estimation, Fine Alignment &amp; Geopositioning, and Generation of InSAR 4D Point Cloud. First, orthophotos are generated from 3D point clouds in the geographic coordinate system, then target segmentation is performed using the Segment Anything Model (SAM). By using a 3D lookup table to relate 3D coordinates and SAR pixels, each 3D geographic coordinate (X, Y, Z) can correspond to a SAR image pixel (r, a). This method overcomes the issue of losing facade information in complex urban environments caused by the original 2D lookup table, achieving precise target matching. Permanent Scatterers (PS) are selected to construct a hybrid network (Delaunay + fully connected network) for parameter estimation. Time series analysis is performed to remove errors and extract nonlinear deformation information, ultimately generating an accurate 4D deformation point cloud.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-03-22 at 22.50.30.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/63372cf3629da8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 <p>In natural environments, such as measuring glacier movement, SAR images are prone to decorrelation due to atmospheric interference. In such cases, DInSAR, which relies on phase information, is not suitable. Instead, Offset Tracking, based on image intensity information, can be used. Offset Tracking selects two matching windows from two images, computes the similarity between them using Normalized Cross-Correlation, and finds the best matching point to obtain the displacement field of the object. Fan, Jinghui, and others compared the accuracy differences between the offset tracking technique based on SAR and point cloud calculation based on Terrestrial Laser Scanners. The study shows that the offset tracking technique depends on image quality and is more reliable when extracting large-scale glacier velocity fields.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/58b5e59721715.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="reflection" class="level1">
 <h1>9.3 Reflection</h1>

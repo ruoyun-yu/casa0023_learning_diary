@@ -229,8 +229,28 @@ ul.task-list li input[type="checkbox"] {
 <section id="application" class="level1">
 <h1>8.2 Application</h1>
 <p>Different classification methods result in variations in classification accuracy and the spatial patterns of classification results. Depending on the research objective, different classification methods can be combined with various spatial analysis techniques. The sub-pixel model assumes that a single pixel contains multiple land cover types, which can compensate for the limitations of image resolution and provide high-accuracy estimates based on low-resolution data. For example, Narumasa Tsutsumida monitored impervious surface areas (ISA) in Jakarta using MODIS data.Object-based classification produces contiguous and block-like classification results, which can be converted into points to calculate density for spatial statistical analysis. For example, the study by Ngoc Tuyen Nguyen et al.&nbsp;combined object-based classification with kernel density estimation (KDE) to analyze the spatial distribution of impervious surfaces in Ho Chi Minh City, identifying hotspot regions and temporal changes.</p>
-<p>Narumasa Tsutsumida’s research focused on developing a classification model to overcome the challenges of mixed pixels and low resolution. The study consisted of four main stages: data preprocessing, reference data collection, model development, and model comparison. First, the data underwent preprocessing, where cloud-covered areas were masked out, and missing values were interpolated using the double logistic function in TIMESAT to smooth the EVI time series. A total of 1,000 regions were selected, and the ISA proportion within each region was estimated based on high-resolution imagery. The reference data was then divided into training and validation sets. A random forest regression model was used, with EVI values as input variables and ISA proportions as output variables. Finally, a pixel classification model was constructed based on different thresholds (25%, 50%, and 75%), and the accuracy differences were compared using overall accuracy and %RMSE as evaluation metrics.</p>
+<p>Narumasa Tsutsumida’s research focused on developing a classification model to overcome the challenges of mixed pixels and low resolution. The study consisted of four main stages: data preprocessing, reference data collection, model development, and model comparison. First, the data underwent preprocessing, where cloud-covered areas were masked out, and missing values were interpolated using the double logistic function in TIMESAT to smooth the EVI time series. A total of 1,000 regions were selected, and the ISA proportion within each region was estimated based on high-resolution imagery. The reference data was then divided into training and validation sets. A random forest regression model was used, with EVI values as input variables and ISA proportions as output variables. Finally, Per-pixel classification model was constructed based on different thresholds (25%, 50%, and 75%), and the accuracy differences were compared using overall accuracy and %RMSE as evaluation metrics.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-03-28 at 16.14.36.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-03-28 at 16.19.34.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-03-28 at 16.19.52-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 <p>Ngoc Tuyen Nguyen’s study on impervious surfaces in Ho Chi Minh City was divided into two main parts: land use classification and spatial statistical analysis. The land use classification process included three steps: spectral index calculation, segmentation, and classification. First, the modified normalized difference water index (MNDWI), enhanced normalized difference impervious surface index (ENDISI), and normalized difference vegetation index (NDVI) were calculated based on preprocessed imagery. The images were then segmented into small single-pixel objects, which were merged based on similarity or local homogeneity. The segmentation process was controlled by compactness, scale parameter, and shape parameters. Using the class hierarchy method, land cover was classified into impervious areas, bare land, and other based on historical spectral index thresholds, location, shape, texture, and other statistical information.After classification, impervious surface pixels were converted into point data, and the KDE method was applied to calculate impervious surface density. Spatial statistical analyses were then performed based on the density data, including spatial autocorrelation analysis, optimized hotspot analysis, and emerging hotspot analysis. Spatial autocorrelation analysis was used to detect the spatial dependence of observations, optimized hotspot analysis identified clusters of ISA hotspots and cold spots, and emerging hotspot analysis tracked temporal changes in ISA hotspots.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-03-28 at 16.13.04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="reflection" class="level1">
 <h1>8.3 Reflection</h1>

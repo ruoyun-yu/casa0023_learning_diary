@@ -8,9 +8,7 @@ editor: visual
 
 London is a green city, with over 47% of its area classified as green or blue and more than 8 million trees. The total asset value of London’s public green spaces exceeds £91 billion, with an estimated annual value of £5 billion. Additionally, access to green spaces helps Londoners save approximately £950 million annually in health costs. Besides, parks and green spaces in England contribute £6.6 billion annually in benefits related to health, climate change, and the environment.
 
-![](images/截屏2025-02-08%2020.07.30.png){width="376"}
-
-![](images/截屏2025-02-08%2020.38.14.png){width="385"}
+![](images/截屏2025-02-08%2020.07.30.png){fig-align="center" width="242"}
 
 However, due to population growth and land development, the extent of green spaces in both London and England has significantly declined over the past decade. A 2019 Committee on Climate Change report stated that the proportion of green space in England’s urban areas decreased from 63% in 2001 to 55% in 2018.
 
@@ -30,9 +28,9 @@ Although [the London City Resilience Strategy 2020](https://www.london.gov.uk/si
 
 # 4.2 Application
 
-.Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study *《Quantifying urban forest structure with open-access remote sensing data sets》*uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.
+Remote sensing imagery plays a crucial role in supporting urban green infrastructure planning and policy responses. For example, it can be used to quantify urban forest structure, providing governments with accurate data support. The study*《Quantifying urban forest structure with open-access remote sensing data sets》*uses a random forest approach to train the model and apply it to urban forest structure assessment. It first calculates canopy cover, canopy height, and tree density using LiDAR data from the UK Environment Agency. Then, it incorporates Sentinel-2 satellite imagery, climate, and terrain data, which are preprocessed via Google Earth Engine. The random forest model predicts forest structure indicators and is applied at both 100m and 20m grid scales. Additionally, the study validates the model’s accuracy using iTree Eco data and explores its transferability across different urban environments.
 
-![](images/截屏2025-02-08%2023.55.40.png){width="474"}
+![](images/截屏2025-02-08%2023.55.40.png){fig-align="center" width="401"}
 
 Moreover, remote sensing can identify potential areas for urban tree planting, assess the economic benefits of green infrastructure development, and provide data-driven support for optimizing urban green space layouts. The study《*Efficient assessments of urban tree planting potential within or near the southern Piedmont region of the United States》*employs supervised classification to analyze remote sensing imagery, categorizing land into four classes: water, developed land, open land, and forest. Using NAIP imagery as reference data, the study validates classification accuracy through random sampling. When evaluating suitable planting areas, it excludes obstacles such as buildings, roads, and water bodies, as well as small forest gaps. The proportion of plantable land within open spaces is calculated for each city. For other cities, the study applies the same classification method to identify open areas and estimates total tree planting potential by extrapolating from similar urban areas.
 
@@ -44,7 +42,7 @@ Remote sensing imagery can be used for monitoring urban forest structures and id
 
 Through this week’s learning, I believe that remote sensing imagery can also be utilized to evaluate urban green infrastructure development. Currently, many regions in China are implementing programs such as the Conversion of Farmland to Forest Program and the Permanent Basic Farmland Protection Program. The central and local governments set quantitative targets for cities regarding green infrastructure development and conservation. However, some cities, due to economic development needs, are unable to meet these requirements on their own. To fulfill the mandated targets, they collaborate with other cities through a mechanism known as "horizontal ecological compensation."For example, if a provincial government requires City A to expand its forest area by 10 square kilometers within a year, but City A only has 5 square kilometers of available land for afforestation, it can compensate by expanding 5 square kilometers of forest in City B. In return, City A provides City B with financial compensation or other benefits to meet the provincial government’s requirements. I believe that remote sensing imagery can first be used to monitor whether local governments have met the green infrastructure targets set by higher authorities. Additionally, it can be employed to evaluate whether this "horizontal ecological compensation" mechanism effectively achieves ecological restoration.
 
-# 6.4 References
+# 4.4 References
 
 Baines, O. et al. (2020) Quantifying urban forest structure with open-access remote sensing data sets. *Urban forestry & urban greening*. \[Online\] 50126653-.
 

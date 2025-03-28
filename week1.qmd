@@ -29,6 +29,8 @@ However, I still have some questions regarding this paper:
 1.  Does NUACI exhibit significant accuracy differences when applied to different remote sensing datasets? If so, how should adjustments be made?
 2.  Is the use of a binary mask from DMSP-OLS nighttime light data in NUACI calculations too rigid? Could it overlook unlit artificial infrastructure?
 
+![](images/1-s2.0-S003442571830066X-gr5_lrg.jpg){fig-align="center" width="60%"}
+
 For tropical regions with high rainfall, frequent cloud cover, and complex vegetation types, Sentinel-2 datasets, with high spatial resolution, multispectral capabilities, and frequent revisit times, are well-suited for research needs. This study explores whether combining remote sensing data from both the dry and wet seasons enhances land use classification accuracy. The study classifies remote sensing datasets into four categories:
 
 -   Pure dry-season dataset
@@ -57,7 +59,9 @@ Additionally, I gained the following insights from this paper:
 
     -   The study used overall accuracy (OA), Kappa coefficient (K), producer’s accuracy (PA), and user’s accuracy (UA) to evaluate classification accuracy.
 
-    -   Factors affecting classification accuracy include sensor type, sources of training and accuracy assessment data, the number of classes, and the classification method.
+    -   Factors affecting classification accuracy include sensor type, sources of training and accuracy assessment data, the number of classes, and the classification method
+
+![](images/out-01.jpg){fig-align="center" width="60%"}
 
 # 1.3 Reflection
 
